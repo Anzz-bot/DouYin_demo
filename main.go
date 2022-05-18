@@ -2,16 +2,21 @@
  * @Author: alexander.huang
  * @Date:   2022-05-18 16:22:29
  * @Last Modified by: alexander.huang
- * @Last Modified time: 2022-05-18 16:22:29
+ * @Last Modified time: 2022-05-18 18:15:23
  */
 package main
 
 import (
+	"github.com/Anzz-bot/DouYin_demo/bootstrap"
+	"github.com/Anzz-bot/DouYin_demo/global"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func main() {
+	//load config
+	bootstrap.InitializeConfig()
+
 	r := gin.Default()
 
 	//test gin router
@@ -21,5 +26,5 @@ func main() {
 	})
 
 	//start gin server
-	r.Run(":8080")
+	r.Run(":" + global.App.Config.App.Port)
 }
