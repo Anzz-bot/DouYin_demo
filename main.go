@@ -17,6 +17,10 @@ func main() {
 	//load config
 	bootstrap.InitializeConfig()
 
+	//load log
+	global.App.Log = bootstrap.InitializeLog()
+	global.App.Log.Info("log init success!")
+
 	r := gin.Default()
 
 	//test gin router

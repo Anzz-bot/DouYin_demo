@@ -69,7 +69,7 @@ func getZapCore() zapcore.Core {
 	//adjust encoder default settings
 	encoderConfig := zap.NewProductionEncoderConfig()
 	encoderConfig.EncodeTime = func(time time.Time, encoder zapcore.PrimitiveArrayEncoder) {
-		encoder.AppendString(time.Format("[" + "2022-05-18 19:51:52.000" + "]"))
+		encoder.AppendString(time.Format("[" + "2006-01-02 15:04:05.000" + "]"))
 	}
 	encoderConfig.EncodeLevel = func(l zapcore.Level, encoder zapcore.PrimitiveArrayEncoder) {
 		encoder.AppendString(global.App.Config.App.Env + "." + l.String())
