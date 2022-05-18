@@ -30,7 +30,7 @@ func setupRouter() *gin.Engine {
 	router.Static("/storage", "./storage/app/public")
 
 	//Register API packet routing
-	apiGroup := router.Group("/api")
+	apiGroup := router.Group("/douyin")
 	routes.SetApiGroupRouters(apiGroup)
 
 	return router

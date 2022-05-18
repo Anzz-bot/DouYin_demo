@@ -8,7 +8,7 @@ package bootstrap
 
 import (
 	"github.com/Anzz-bot/DouYin_demo/global"
-	"github.com/Anzz-bot/DouYin_demo/util"
+	"github.com/Anzz-bot/DouYin_demo/utils"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
@@ -36,7 +36,7 @@ func InitializeLog() *zap.Logger {
 	return zap.New(getZapCore(), options...)
 }
 func createRootDir() {
-	if ok, _ := util.PathExists(global.App.Config.Log.RootDir); !ok {
+	if ok, _ := utils.PathExists(global.App.Config.Log.RootDir); !ok {
 		_ = os.Mkdir(global.App.Config.Log.RootDir, os.ModePerm)
 	}
 }

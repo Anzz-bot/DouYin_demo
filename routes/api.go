@@ -7,6 +7,7 @@
 package routes
 
 import (
+	"github.com/Anzz-bot/DouYin_demo/app/common/request"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
@@ -19,6 +20,18 @@ func SetApiGroupRouters(router *gin.RouterGroup) {
 	router.GET("/testApi", func(c *gin.Context) {
 		time.Sleep(5 * time.Second)
 		c.String(http.StatusOK, "success")
+	})
+	router.POST("/user/register", func(c *gin.Context) {
+		var form request.Register
+		if err := c.ShouldBindJSON(&form); err != nil {
+			c.JSON(http.StatusOK, gin.H{
+				"error": request.GetErrorMsg(form, err),
+			})
+			return
+		}
+		c.JSON(http.StatusOK, gin.H{
+			"message": "success",
+		})
 	})
 
 }

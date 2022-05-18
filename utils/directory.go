@@ -4,7 +4,7 @@
  * @Last Modified by: alexander.huang
  * @Last Modified time: 2022-05-18 19:10:11
  */
-package util
+package utils
 
 import "os"
 

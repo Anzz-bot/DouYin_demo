@@ -12,9 +12,9 @@ import (
 )
 
 func main() {
-	//load config
-	bootstrap.InitializeConfig()
 
+	bootstrap.InitializeConfig()    //load config
+	bootstrap.InitializeValidator() //load validator
 	//load log
 	global.App.Log = bootstrap.InitializeLog()
 	global.App.Log.Info("log init success!")
