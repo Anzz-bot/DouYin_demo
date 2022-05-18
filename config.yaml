@@ -3,3 +3,13 @@ app:                     #viper tree
   port: 8888                  #listen port
   app_name: gin-app           #app name
   app_url: http://localhost   #url name
+log:                     #viper tree
+  level: info                 #log level
+  root_dir: ./storage/logs    #root dir
+  filename: app.log           #filename
+  format:                     #write format(json)
+  show_line: true             #show which line call
+  max_backups: 3              #max old file
+  max_size: 500               #max size (MB)
+  max_age: 28                 #max keep day
+  compress: true              #true or false to compress
