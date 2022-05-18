@@ -1,3 +1,9 @@
+/*
+ * @Author: alexander.huang
+ * @Date:   2022-05-19 01:14:50
+ * @Last Modified by: alexander.huang
+ * @Last Modified time: 2022-05-19 01:14:50
+ */
 package request
 
 type Register struct {
