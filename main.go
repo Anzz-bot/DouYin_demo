@@ -9,8 +9,6 @@ package main
 import (
 	"github.com/Anzz-bot/DouYin_demo/bootstrap"
 	"github.com/Anzz-bot/DouYin_demo/global"
-	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func main() {
@@ -32,14 +30,5 @@ func main() {
 		}
 	}()
 
-	r := gin.Default()
-
-	//test gin router
-	//success return OK
-	r.GET("/test", func(c *gin.Context) {
-		c.String(http.StatusOK, "OK")
-	})
-
-	//start gin server
-	r.Run(":" + global.App.Config.App.Port)
+	bootstrap.RunServer()
 }
