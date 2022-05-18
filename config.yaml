@@ -1,7 +1,7 @@
 app:                     # viper tree
   env: local                  # environment name
   port: 8888                  # listen port
-  app_name: gin-app           # app name
+  app_name: douyin_demo       # app name
   app_url: http://localhost   # url name
 log:                     # viper tree
   level: info                 # log level
@@ -16,10 +16,10 @@ log:                     # viper tree
 database:                     # viper tree
   driver: mysql                   # database driver
   host: 127.0.0.1                 # host
-  port: 8306                      # port
-  database: go-test               # dbname
+  port: 3306                      # port
+  database: douyin_demo           # dbname
   username: root                  # username
-  password: root                  # passwd
+  password: 123456                # passwd
   charset: utf8mb4                # charset
   max_idle_conns: 10              # max free pool
   max_open_conns: 100             # max open conn

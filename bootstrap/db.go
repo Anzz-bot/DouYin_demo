@@ -7,6 +7,7 @@
 package bootstrap
 
 import (
+	"github.com/Anzz-bot/DouYin_demo/app/models"
 	"github.com/Anzz-bot/DouYin_demo/global"
 	"go.uber.org/zap"
 	"gopkg.in/natefinch/lumberjack.v2"
@@ -38,7 +39,7 @@ func getGormLogWriter() logger.Writer {
 		// gorm writer to console
 		writer = os.Stdout
 	}
-	return log.New(writer, "/r/n", log.LstdFlags)
+	return log.New(writer, "\r\n", log.LstdFlags)
 
 }
 
@@ -105,7 +106,19 @@ func initMysqlGorm() *gorm.DB {
 		sqlDB, _ := db.DB()
 		sqlDB.SetMaxIdleConns(dbConfig.MaxIdleConns)
 		sqlDB.SetMaxOpenConns(dbConfig.MaxOpenConns)
+		initMysqlTables(db)
 		return db
 	}
 
+}
+
+// init tables
+func initMysqlTables(db *gorm.DB) {
+	err := db.AutoMigrate(
+		models.User{},
+	)
+	if err != nil {
+		global.App.Log.Error("migrate table failed", zap.Any("err", err))
+		os.Exit(0)
+	}
 }

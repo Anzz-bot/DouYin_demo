@@ -2,7 +2,7 @@
  * @Author: alexander.huang
  * @Date:   2022-05-18 16:22:29
  * @Last Modified by: alexander.huang
- * @Last Modified time: 2022-05-18 18:15:23
+ * @Last Modified time: 2022-05-18 22:21:12
  */
 package main
 
@@ -20,6 +20,17 @@ func main() {
 	//load log
 	global.App.Log = bootstrap.InitializeLog()
 	global.App.Log.Info("log init success!")
+
+	//load DB
+	global.App.DB = bootstrap.InitializeDB()
+	global.App.Log.Info("DB init success!")
+	//close DB
+	defer func() {
+		if global.App.DB != nil {
+			db, _ := global.App.DB.DB()
+			db.Close()
+		}
+	}()
 
 	r := gin.Default()
 

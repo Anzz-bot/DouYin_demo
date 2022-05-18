@@ -1,2 +1,15 @@
 [181818-31-58 59:315:3118.755]	local.info	DouYin_demo/main.go:22	log init success!
 [2022-05-18 20:37:18.642]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 21:56:21.321]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 21:56:23.361]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it."}
+[2022-05-18 21:56:23.361]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:02:45.353]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:02:47.390]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it."}
+[2022-05-18 22:02:47.390]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:03:31.149]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:03:31.168]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}
+[2022-05-18 22:03:31.168]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:04:19.433]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:04:19.452]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:09:55.087]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:09:55.165]	local.info	DouYin_demo/main.go:26	DB init success!

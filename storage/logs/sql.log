@@ -1,0 +1,20 @@
+/r/n2022/05/18 21:56:23 E:/summerByteDance/DouYin_demo/bootstrap/db.go:99
+[error] failed to initialize database, got error dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it.
+
+2022/05/18 22:02:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:99
+[error] failed to initialize database, got error dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it.
+
+2022/05/18 22:03:31 E:/summerByteDance/DouYin_demo/bootstrap/db.go:99
+[error] failed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+2022/05/18 22:09:55 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[1.218ms] [rows:-] SELECT DATABASE()
+
+2022/05/18 22:09:55 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[2.869ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/18 22:09:55 E:/summerByteDance/DouYin_demo/bootstrap/db.go:116
+[0.505ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/18 22:09:55 E:/summerByteDance/DouYin_demo/bootstrap/db.go:116
+[56.392ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_users_deleted_at (`deleted_at`),INDEX idx_users_mobile (`mobile`))
