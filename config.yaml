@@ -1,15 +1,29 @@
-app:                     #viper tree
-  env: local                  #environment name
-  port: 8888                  #listen port
-  app_name: gin-app           #app name
-  app_url: http://localhost   #url name
-log:                     #viper tree
-  level: info                 #log level
-  root_dir: ./storage/logs    #root dir
-  filename: app.log           #filename
-  format:                     #write format(json)
-  show_line: true             #show which line call
-  max_backups: 3              #max old file
-  max_size: 500               #max size (MB)
-  max_age: 28                 #max keep day
-  compress: true              #true or false to compress
+app:                     # viper tree
+  env: local                  # environment name
+  port: 8888                  # listen port
+  app_name: gin-app           # app name
+  app_url: http://localhost   # url name
+log:                     # viper tree
+  level: info                 # log level
+  root_dir: ./storage/logs    # root dir
+  filename: app.log           # filename
+  format:                     # write format(json)
+  show_line: true             # show which line call
+  max_backups: 3              # max old file
+  max_size: 500               # max size (MB)
+  max_age: 28                 # max keep day
+  compress: true              # true or false to compress
+database:                     # viper tree
+  driver: mysql                   # database driver
+  host: 127.0.0.1                 # host
+  port: 8306                      # port
+  database: go-test               # dbname
+  username: root                  # username
+  password: root                  # passwd
+  charset: utf8mb4                # charset
+  max_idle_conns: 10              # max free pool
+  max_open_conns: 100             # max open conn
+  log_mode: info                  # log level
+  enable_file_log_writer: true    # open log or not
+  log_filename: sql.log           # log name
+
