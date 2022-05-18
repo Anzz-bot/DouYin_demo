@@ -1,0 +1,5 @@
+app:                     #viper tree
+  env: local                  #environment name
+  port: 8888                  #listen port
+  app_name: gin-app           #app name
+  app_url: http://localhost   #url name
