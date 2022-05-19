@@ -41,3 +41,40 @@
 [2022-05-19 05:10:58.149]	local.info	DouYin_demo/main.go:24	DB init success!
 [2022-05-19 05:24:02.136]	local.info	DouYin_demo/main.go:20	log init success!
 [2022-05-19 05:24:02.192]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 13:59:59.080]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 13:59:59.149]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:03:51.748]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:03:51.795]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:05:42.923]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:05:42.973]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:06:53.257]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:06:53.297]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:06:58.043]	local.info	services/user.go:25	11111111111
+[2022-05-19 14:06:58.043]	local.info	services/user.go:28	221
+[2022-05-19 14:08:07.441]	local.info	services/user.go:25	11111111111
+[2022-05-19 14:08:07.441]	local.info	services/user.go:31	11111111111
+[2022-05-19 14:08:07.442]	local.info	services/user.go:33	11111111111
+[2022-05-19 16:00:35.993]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:00:36.197]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:06:55.802]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:06:55.840]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:07:06.805]	local.info	response/user.go:22	qay12345
+[2022-05-19 16:30:59.391]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:30:59.446]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:32:29.174]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:32:29.208]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:58:49.977]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:58:50.046]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:02:48.041]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:02:48.085]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:04:47.355]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:04:47.392]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:04:53.817]	local.info	services/user.go:25	13111
+[2022-05-19 17:04:53.817]	local.info	services/user.go:27	13222
+[2022-05-19 17:04:53.817]	local.info	response/user.go:22	vvvffff
+[2022-05-19 17:06:22.566]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:06:22.604]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:06:42.275]	local.info	response/user.go:22	dasdasdasxxxxxxx
+[2022-05-19 17:08:17.502]	local.info	response/user.go:22	dasdasdmmmm
+[2022-05-19 17:22:20.555]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:22:20.602]	local.info	DouYin_demo/main.go:24	DB init success!

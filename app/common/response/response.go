@@ -14,28 +14,14 @@ import (
 
 // 响应结构体
 type Response struct {
-	ErrorCode int         `json:"error_code"` // 自定义错误码
-	Data      interface{} `json:"data"`       // 数据
-	Message   string      `json:"message"`    // 信息
-}
-
-type CodeResponse struct {
-	StatusCode int    `json:"status_code"` // 状态码，0-成功，其他值-失败
-	StatusMsg  string `json:"status_msg"`  // 返回状态描述
-}
-
-func NewResponse(code int, msg string) CodeResponse {
-	return CodeResponse{
-		StatusCode: code,
-		StatusMsg:  msg,
-	}
+	ErrorCode int    `json:"status_code"` // 自定义错误码
+	Message   string `json:"status_msg"`  // 信息
 }
 
 // Success 响应成功 ErrorCode 为 0 表示成功
 func Success(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, Response{
 		0,
-		data,
 		"ok",
 	})
 }
@@ -44,7 +30,6 @@ func Success(c *gin.Context, data interface{}) {
 func Fail(c *gin.Context, errorCode int, msg string) {
 	c.JSON(http.StatusOK, Response{
 		errorCode,
-		nil,
 		msg,
 	})
 }
