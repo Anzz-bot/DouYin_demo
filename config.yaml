@@ -26,15 +26,15 @@ database:                     # viper tree
   log_mode: info                  # log level
   enable_file_log_writer: true    # open log or not
   log_filename: sql.log           # log name
-jwt:
-  secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s  #secret
-  jwt_ttl: 43200                                                            #ttl
-  jwt_blacklist_grace_period: 10                                            #black grace time
-  refresh_grace_period: 43200
+jwt:                                                                    # viper tree
+  secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s  # secret
+  jwt_ttl: 43200                                                            # ttl
+  jwt_blacklist_grace_period: 10                                            # black grace time
+  refresh_grace_period: 43200                                               # refresh time
 
-redis:
-  host: 127.0.0.1
-  port: 6379
-  db: 0
-  password:
+redis:                               # viper tree
+  host: 127.0.0.1                           # host
+  port: 6379                                # port
+  db: 0                                     # num 0 db
+  password:                                 # password
 
