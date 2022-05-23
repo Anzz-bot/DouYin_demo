@@ -78,3 +78,8 @@
 [2022-05-19 17:08:17.502]	local.info	response/user.go:22	dasdasdmmmm
 [2022-05-19 17:22:20.555]	local.info	DouYin_demo/main.go:20	log init success!
 [2022-05-19 17:22:20.602]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 21:42:09.106]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 21:42:09.308]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 21:42:20.137]	local.info	response/user.go:28	dasdasdmmmmdsa
+[2022-05-23 16:05:39.816]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 16:05:39.889]	local.info	DouYin_demo/main.go:24	DB init success!

@@ -22,6 +22,7 @@ func SetApiGroupRouters(router *gin.RouterGroup) {
 		c.String(http.StatusOK, "success")
 	})
 
-	router.POST("/user/register/", app.Register)
+	router.POST("/register/", app.Register)
+	router.POST("/login/", app.Login)
 
 }

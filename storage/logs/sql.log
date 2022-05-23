@@ -960,3 +960,90 @@
 
 2022/05/19 17:24:00 E:/summerByteDance/DouYin_demo/app/services/user.go:17
 [1.244ms] [rows:1] SELECT `id` FROM `users` WHERE name = 'lisi22' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.505ms] [rows:-] SELECT DATABASE()
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[18.150ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/19 21:42:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.645ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.516ms] [rows:-] SELECT DATABASE()
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.613ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[5.492ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[35.335ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/19 21:42:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.055ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/19 21:42:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/19 21:42:20 E:/summerByteDance/DouYin_demo/app/services/user.go:23 record not found
+[1.805ms] [rows:0] SELECT `id` FROM `users` WHERE name = 'dasdasdmmmmdsa' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/19 21:42:20 E:/summerByteDance/DouYin_demo/app/services/user.go:29
+[6.887ms] [rows:1] INSERT INTO `users` (`name`,`password`,`token`,`created_at`,`updated_at`,`deleted_at`) VALUES ('dasdasdmmmmdsa','$2a$04$.T8zfvC8986isYYkTkR0XufzBRThvhoeumeeRE7iSlEBqDMGYzRGS','dasdasdmmmmdsa','2022-05-19 21:42:20.131','2022-05-19 21:42:20.131',NULL)
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.517ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[4.004ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 16:05:39 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.734ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.823ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[6.490ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[25.492ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 16:05:39 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.496ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 16:05:39 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/23 16:06:05 E:/summerByteDance/DouYin_demo/app/services/user.go:24 record not found
+[3.036ms] [rows:0] SELECT `id` FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 16:06:05 E:/summerByteDance/DouYin_demo/app/services/user.go:30
+[7.238ms] [rows:1] INSERT INTO `users` (`name`,`password`,`token`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hxl6626','$2a$04$T0Mq84Jo7sHR8nAd8dcPDugkjjs9nwVfJW5FwYZWvtvhVF2gLMmFy','hxl6626','2022-05-23 16:06:05.848','2022-05-23 16:06:05.848',NULL)
+
+2022/05/23 16:06:28 E:/summerByteDance/DouYin_demo/app/services/user.go:35
+[0.625ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 16:06:44 E:/summerByteDance/DouYin_demo/app/services/user.go:35
+[0.000ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 16:07:12 E:/summerByteDance/DouYin_demo/app/services/user.go:35
+[0.636ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 16:07:36 E:/summerByteDance/DouYin_demo/app/services/user.go:35
+[0.768ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 16:07:51 E:/summerByteDance/DouYin_demo/app/services/user.go:35
+[3.129ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1

@@ -28,3 +28,23 @@ func Register(c *gin.Context) {
 		response.RegisterSuccess(c, user)
 	}
 }
+
+func Login(c *gin.Context) {
+	var form request.Login
+	username := c.Query("username")
+	password := c.Query("password")
+	form = request.Login{
+		Name:     username,
+		Password: password,
+	}
+	if err, user := services.UserService.Login(form); err != nil {
+		response.LoginFail(c, global.Errors.BusinessError.ErrorCode, err.Error())
+	} else {
+		//tokenData, err, _ := services.JwtService.CreateToken(services.AppGuardName, user)
+		//if err != nil {
+		//	response.LoginFail(c, global.Errors.TokenError.ErrorCode, err.Error())
+		//	return
+		//}
+		response.LoginSuccess(c, *user)
+	}
+}

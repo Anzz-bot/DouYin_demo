@@ -6,6 +6,8 @@
  */
 package models
 
+import "strconv"
+
 type User struct {
 	ID
 	Name     string `json:"name" gorm:"not null;comment:用户名称"`
@@ -13,4 +15,8 @@ type User struct {
 	Token    string `json:"token"    gorm:"not null;comment:鉴权token"`
 	Timestamps
 	SoftDeletes
+}
+
+func (user User) GetUid() string {
+	return strconv.Itoa(int(user.ID.ID))
 }
