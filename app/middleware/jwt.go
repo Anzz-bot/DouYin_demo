@@ -1,3 +1,9 @@
+/*
+ * @Author: alexander.huang
+ * @Date:   2022-05-23 21:40:51
+ * @Last Modified by: alexander.huang
+ * @Last Modified time: 2022-05-23 21:40:51
+ */
 package middleware
 
 import (
@@ -10,18 +16,20 @@ import (
 
 func JWTAuth(GuardName string) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		tokenStr := c.Request.Header.Get("Authorization")
+		tokenStr := c.Request.URL.Query().Get("token")
 		if tokenStr == "" {
 			response.TokenFail(c)
 			c.Abort()
 			return
 		}
-		tokenStr = tokenStr[len(services.TokenType)+1:]
+		global.App.Log.Info(tokenStr)
+		tokenStr = tokenStr[:]
 
 		// Token 解析校验
 		token, err := jwt.ParseWithClaims(tokenStr, &services.CustomClaims{}, func(token *jwt.Token) (interface{}, error) {
 			return []byte(global.App.Config.Jwt.Secret), nil
 		})
+
 		if err != nil {
 			response.TokenFail(c)
 			c.Abort()

@@ -8,6 +8,8 @@ package routes
 
 import (
 	"github.com/Anzz-bot/DouYin_demo/app/controllers/app"
+	"github.com/Anzz-bot/DouYin_demo/app/middleware"
+	"github.com/Anzz-bot/DouYin_demo/app/services"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
@@ -24,5 +26,10 @@ func SetApiGroupRouters(router *gin.RouterGroup) {
 
 	router.POST("/register/", app.Register)
 	router.POST("/login/", app.Login)
+
+	authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
+	{
+		authRouter.GET("/", app.Info)
+	}
 
 }

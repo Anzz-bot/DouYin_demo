@@ -2,7 +2,7 @@
  * @Author: alexander.huang
  * @Date:   2022-05-19 20:14:50
  * @Last Modified by: alexander.huang
- * @Last Modified time: 2022-05-19 20:14:50
+ * @Last Modified time: 2022-05-23 21:40:51
  */
 package services
 
@@ -26,7 +26,8 @@ func (userService *userService) Register(params request.Register) (err error, us
 		err = errors.New("用户已存在")
 		return
 	}
-	user = models.User{Name: params.Name, Password: utils.BcryptMake([]byte(params.Password)), Token: params.Name}
+
+	user = models.User{Name: params.Name, Password: utils.BcryptMake([]byte(params.Password))}
 	err = global.App.DB.Create(&user).Error
 	return
 }

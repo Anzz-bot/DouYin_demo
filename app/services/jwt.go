@@ -1,3 +1,9 @@
+/*
+ * @Author: alexander.huang
+ * @Date:   2022-05-18 22:20:50
+ * @Last Modified by: alexander.huang
+ * @Last Modified time: 2022-05-23 21:40:51
+ */
 package services
 
 import (
@@ -21,7 +27,7 @@ type CustomClaims struct {
 
 const (
 	TokenType    = "bearer"
-	AppGuardName = "douyin_demo"
+	AppGuardName = "app"
 )
 
 type TokenOutPut struct {
