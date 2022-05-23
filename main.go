@@ -19,6 +19,8 @@ func main() {
 	global.App.Log = bootstrap.InitializeLog()
 	global.App.Log.Info("log init success!")
 
+	global.App.Redis = bootstrap.InitializeRedis()
+	global.App.Log.Info("redis init success!")
 	//load DB
 	global.App.DB = bootstrap.InitializeDB()
 	global.App.Log.Info("DB init success!")

@@ -328,3 +328,14 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-23 21:37:01.719]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTYyMjAsImp0aSI6IjIxIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEyMDIwfQ.Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
 [2022-05-23 21:37:01.720]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTYyMjAsImp0aSI6IjIxIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEyMDIwfQ.Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
 [2022-05-23 21:37:01.720]	local.info	middleware/jwt.go:27	Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
+[2022-05-23 22:03:46.100]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 22:03:46.217]	local.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 22:03:46.218]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 22:03:46.259]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 22:04:02.054]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTc4NDIsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEzNjQyfQ.1vCC5TmSxKC2IoXJiRnd3zdtSwX-jZTxBD7wKNKEFQk
+[2022-05-23 22:04:34.318]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTc4NzQsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEzNjc0fQ.ElNsXyo57th5n_2o8po7KTuJLFr-h5wrSRCF436w5EM
+[2022-05-23 22:12:42.562]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 22:12:42.686]	local.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 22:12:42.686]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 22:12:42.717]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 22:12:50.503]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTgzNzAsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzE0MTcwfQ.jSJtiFYcWagSnJlQpe9HMs4htZEr8cvPEbAD9z_gg88
