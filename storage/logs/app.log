@@ -339,3 +339,181 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-23 22:12:42.686]	local.info	DouYin_demo/main.go:23	redis init success!
 [2022-05-23 22:12:42.717]	local.info	DouYin_demo/main.go:26	DB init success!
 [2022-05-23 22:12:50.503]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTgzNzAsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzE0MTcwfQ.jSJtiFYcWagSnJlQpe9HMs4htZEr8cvPEbAD9z_gg88
+[2022-05-23 23:09:51.142]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:09:51.265]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:09:51.265]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:09:51.392]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:36.578]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:10:36.716]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:10:36.716]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:10:36.756]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:58.909]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:10:59.030]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:10:59.030]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:10:59.066]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:59.066]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:07:17.688]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:07:17.804]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:07:17.804]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:07:17.883]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:07:17.883]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:15:29.611]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:15:29.730]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:15:29.730]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:15:29.775]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:15:29.775]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:21:04.500]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNjk2NjQsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI1NDY0fQ.C66HP4jLOZ2nwmFLFnx3R8d0QQWwhP-gRsEaoV9k9ZA
+[2022-05-24 01:36:29.006]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:36:29.155]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:36:29.156]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:36:29.226]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:36:29.226]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:37:44.068]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:37:44.229]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:37:44.229]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:37:44.292]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:37:44.292]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:40:07.251]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:40:07.402]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:40:07.402]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:40:07.441]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:40:07.441]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:41:21.632]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:41:21.769]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:41:21.769]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:41:21.840]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:41:21.840]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:48:54.501]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:48:54.610]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:48:54.610]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:48:54.667]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:48:54.667]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:52:54.624]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:52:54.741]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:52:54.741]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:52:54.792]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:52:54.792]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:53:58.667]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:53:58.821]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:53:58.821]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:53:58.858]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:53:58.858]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:54:39.566]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNzE2NzksImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI3NDc5fQ.cz1TUlXfxMfUW78XpiXpF1zONJ2nKclV5T8W7EnmnA0
+[2022-05-24 01:56:17.197]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:56:17.348]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:56:17.348]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:56:17.384]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:56:17.384]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:59:54.704]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:59:54.816]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:59:54.816]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:59:54.842]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 02:00:17.283]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNzIwMTcsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI3ODE3fQ.1vaAAsFaiB-F5x5zaqrhlT1nh9J6V_EaIPy8qTSfgTg
+[2022-05-24 09:56:20.767]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 09:56:20.897]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 09:56:20.897]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 09:56:21.011]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 09:56:30.351]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 09:56:30.475]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 09:56:30.475]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 09:56:30.528]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:18:37.146]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:18:37.411]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:18:37.411]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:18:37.670]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:19:10.107]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:19:10.223]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:19:10.223]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:19:10.276]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:19:17.375]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:19:17.489]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:19:17.489]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:19:17.541]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:23:27.363]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:23:27.501]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:23:27.501]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:23:27.599]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:23:52.031]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:23:52.205]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:23:52.205]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:23:52.314]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:35:06.896]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:35:07.030]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:35:07.030]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:35:07.090]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:36:08.535]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:36:08.656]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:36:08.657]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:36:08.753]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:37:36.308]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:37:36.444]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:37:36.444]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:37:36.493]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:38:25.244]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:38:25.388]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:38:25.388]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:38:25.437]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:41:33.458]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:41:33.583]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:41:33.584]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:41:33.711]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:43:03.604]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:43:03.720]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:43:03.720]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:43:03.769]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:44:01.600]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:44:01.730]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:44:01.730]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:44:01.780]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:47:45.583]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:47:45.700]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:47:45.700]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:47:45.759]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:48:51.434]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:48:51.548]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:48:51.548]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:48:51.600]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:50:51.978]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:50:52.098]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:50:52.098]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:50:52.143]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 22:53:32.043]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0NDcyMTEsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0MDMwMTF9.fXQr7lrfjQScnP__J3aJL5EIbBFzXzng7DlZpPqJJ3Q
+[2022-05-24 22:59:36.904]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:59:37.013]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:59:37.013]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:59:37.045]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 22:59:54.681]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0NDc1OTQsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0MDMzOTR9.tjSgK4KVup0SZUAWEOneGm8Buv2VWZqEvBL6O2wIL74
+[2022-05-24 23:10:32.946]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 23:10:33.061]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 23:10:33.061]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 23:10:33.088]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 00:41:34.655]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:41:34.776]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:41:34.776]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:41:34.815]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/models.Video's field Author: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+[2022-05-25 00:45:09.315]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:45:09.438]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:45:09.438]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:45:09.468]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "Error 1075: Incorrect table definition; there can be only one auto column and it must be defined as a key"}
+[2022-05-25 00:51:24.108]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:51:24.240]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:51:24.240]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:51:24.308]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:19:11.617]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:19:11.727]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:19:11.727]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:19:11.781]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:20:12.855]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:20:12.979]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:20:12.979]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:20:13.030]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:20:38.973]	local.info	services/feed.go:20	no video found
+[2022-05-25 02:28:01.779]	local.info	services/feed.go:20	no video found
+[2022-05-25 02:32:05.271]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:32:05.388]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:32:05.389]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:32:05.434]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:38:51.452]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:38:51.562]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:38:51.562]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:38:51.602]	local.info	DouYin_demo/main.go:26	DB init success!

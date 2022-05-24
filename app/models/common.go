@@ -13,7 +13,7 @@ import (
 
 // primary key ID
 type ID struct {
-	ID uint `json:"id" gorm:"primaryKey"`
+	ID uint64 `json:"id" gorm:"primaryKey"`
 }
 
 // create and update time

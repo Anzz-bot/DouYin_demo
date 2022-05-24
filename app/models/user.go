@@ -15,7 +15,7 @@ type User struct {
 	Token         string `json:"token"    gorm:"not null;comment:鉴权token"`
 	FollowCount   uint64 `json:"follow_count" gorm:"not null;default:0;comment:关注总数"`
 	FollowerCount uint64 `json:"follower_count" gorm:"not null;default:0;comment:粉丝总数"`
-	IsFollow      bool   `json:"follower_count"`
+	IsFollow      bool   `json:"is_follow" gorm:"not null;default:false;comment:是否关注"`
 	Timestamps
 	SoftDeletes
 }

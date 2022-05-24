@@ -8,6 +8,7 @@ package bootstrap
 
 import (
 	"context"
+	app "github.com/Anzz-bot/DouYin_demo/app/controllers"
 	"github.com/Anzz-bot/DouYin_demo/global"
 	"github.com/Anzz-bot/DouYin_demo/routes"
 	"github.com/gin-gonic/gin"
@@ -50,10 +51,11 @@ func setupRouter() *gin.Engine {
 	router.Static("/public", "./static")
 	router.Static("/storage", "./storage/app/public")
 
-	//Register API packet routing
+	//User API packet routing
 	apiGroup := router.Group("/douyin/user")
-	routes.SetApiGroupRouters(apiGroup)
+	routes.SetUserApiGroupRouters(apiGroup)
 
+	router.GET("/douyin/feed/", app.Feed)
 	return router
 }
 

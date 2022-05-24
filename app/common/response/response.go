@@ -18,6 +18,11 @@ type Response struct {
 	Message   string `json:"status_msg"`  // 信息
 }
 
+var ResponseSuccess = Response{
+	0,
+	"ok",
+}
+
 // Success 响应成功 ErrorCode 为 0 表示成功
 func Success(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, Response{

@@ -29,6 +29,7 @@ func (userService *userService) Register(params request.Register) (err error, us
 
 	user = models.User{Name: params.Name, Password: utils.BcryptMake([]byte(params.Password))}
 	err = global.App.DB.Create(&user).Error
+
 	return
 }
 
@@ -41,7 +42,7 @@ func (userService *userService) Login(params request.Login) (err error, user *mo
 }
 
 // GetUserInfo 获取用户信息
-func (userService *userService) GetUserInfo(id string) (err error, user models.User) {
+func (userService *userService) GetUserInfo(id string) (err error, user *models.User) {
 	intId, err := strconv.Atoi(id)
 	err = global.App.DB.First(&user, intId).Error
 	if err != nil {

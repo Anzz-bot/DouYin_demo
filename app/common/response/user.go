@@ -14,7 +14,7 @@ import (
 
 type RegisterLoginResponse struct {
 	Response
-	UserId uint   `json:"user_id"`
+	UserId uint64 `json:"user_id"`
 	Token  string `json:"token"`
 }
 type InfoResponse struct {
@@ -22,16 +22,11 @@ type InfoResponse struct {
 	User UserAPI `json:"user"`
 }
 type UserAPI struct {
-	ID            uint   `json:"id"`
+	ID            uint64 `json:"id"`
 	Name          string `json:"name"`           // 用户名称
 	FollowCount   uint64 `json:"follow_count"`   // 关注总数
 	FollowerCount uint64 `json:"follower_count"` // 粉丝总数
 	IsFollow      bool   `json:"is_follow"`      // 是否关注
-}
-
-var ResponseSuccess = Response{
-	0,
-	"ok",
 }
 
 func RegisterSuccess(c *gin.Context, user models.User) {

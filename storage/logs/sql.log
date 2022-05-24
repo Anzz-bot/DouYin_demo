@@ -2715,3 +2715,2124 @@
 
 2022/05/23 22:12:50 E:/summerByteDance/DouYin_demo/app/services/user.go:46
 [0.607ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 17 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.090ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[4.654ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:09:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.516ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.289ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.586ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[14.127ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.601ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:09:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:09:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:09:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[2.809ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:09:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[79.386ms] [rows:0] CREATE TABLE `media` (`id` bigint unsigned AUTO_INCREMENT,`disk_type` varchar(20) NOT NULL COMMENT '存储类型',`src_type` tinyint NOT NULL COMMENT '链接类型 1相对路径 2外链',`src` varchar(191) NOT NULL COMMENT '资源链接',`created_at` datetime NULL,`updated_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_media_disk_type (`disk_type`))
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.281ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.511ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.614ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.508ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.902ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.109ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.711ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.510ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.468ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.624ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[1.754ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[8.487ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:36 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.053ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.508ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.970ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.172ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.398ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.569ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.034ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[5.843ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/23 23:10:59 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/23 23:10:59 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.884ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[9.650ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[1.402ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.516ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[2.292ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[15.652ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.589ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.656ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.241ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.332ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.477ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.797ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.746ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:07:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.544ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:07:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.516ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.506ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.275ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.632ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.509ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.942ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.835ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.512ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.541ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.511ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.217ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:15:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.890ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:15:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.512ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:21:04 E:/summerByteDance/DouYin_demo/app/services/user.go:36
+[9.700ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 01:21:04 E:/summerByteDance/DouYin_demo/app/services/user.go:46
+[2.155ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 17 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.085ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[5.160ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.511ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.902ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.534ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[19.963ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.997ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.508ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.684ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[1.703ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.793ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.988ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:36:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.609ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:36:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.705ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.993ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.997ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.347ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[20.249ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[1.121ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.515ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.716ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.042ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.519ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.745ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.112ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:37:44 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.825ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:37:44 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.657ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.320ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.509ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.509ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.351ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.517ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.513ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.650ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.940ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.713ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[6.444ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:40:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.718ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:40:07 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.513ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.858ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.375ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.105ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.871ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[14.192ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.677ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.514ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.278ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.658ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.509ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[5.514ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:41:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:41:21 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[5.646ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.671ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.412ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.348ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.510ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.542ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.517ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.028ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.271ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.013ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.039ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[6.686ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:48:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:48:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.512ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.211ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.701ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.524ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.512ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.640ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.177ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.511ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.751ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.937ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:52:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.981ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:52:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.340ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.676ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.576ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.510ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[9.897ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.192ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.011ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.543ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.007ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.555ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[6.304ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:53:58 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:53:58 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.624ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:54:33 E:/summerByteDance/DouYin_demo/app/services/user.go:36
+[2.984ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 01:54:39 E:/summerByteDance/DouYin_demo/app/services/user.go:36
+[0.403ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 01:54:39 E:/summerByteDance/DouYin_demo/app/services/user.go:46
+[0.000ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 17 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.511ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.380ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.865ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.621ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.097ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.257ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.512ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.765ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.064ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `media` LIMIT 1
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[6.203ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:56:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.507ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:56:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.005ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.553ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:59:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.508ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.555ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[2.571ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[9.484ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 01:59:54 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.219ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 01:59:54 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 02:00:17 E:/summerByteDance/DouYin_demo/app/services/user.go:36
+[0.516ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 02:00:17 E:/summerByteDance/DouYin_demo/app/services/user.go:46
+[1.092ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 17 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.086ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[6.140ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 09:56:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.510ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 09:56:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.339ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 09:56:21 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[63.184ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.551ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.705ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 09:56:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.027ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.544ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.618ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 09:56:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[24.600ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:18:37 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[error] failed to parse value models.Video{ID:models.ID{ID:0x0}, Author:models.User{ID:models.ID{ID:0x0}, Name:"", Password:"", Token:"", FollowCount:0x0, FollowerCount:0x0, IsFollow:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, PlayUrl:"", CoverUrl:"", FavoriteCount:0x0, CommentCount:0x0, IsFavorite:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, got error invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/models.Video's field Author: define a valid foreign key for relations or implement the Valuer/Scanner interface
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.543ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[22.804ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:18:37 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[8.142ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.748ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[37.155ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[29.074ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:18:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[48.814ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.625ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:19:10 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.517ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.547ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[9.484ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:19:10 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[31.943ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.507ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.506ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:19:17 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.565ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.649ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:19:17 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[38.296ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.505ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[3.444ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:23:27 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[1.432ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.745ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.504ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[24.859ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:23:27 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[31.750ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.513ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.512ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:23:52 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[1.700ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.312ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[32.742ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:23:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[65.373ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.065ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:35:07 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.803ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.182ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:35:07 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[31.751ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.503ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.503ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:36:08 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.503ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.101ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.517ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[54.735ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:36:08 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[35.493ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.505ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:37:36 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.511ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.614ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:37:36 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[28.796ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.505ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.202ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:38:25 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.518ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[16.642ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:38:25 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[25.442ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[12.701ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:41:33 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[5.159ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.061ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[2.502ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[40.418ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:41:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[48.383ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.451ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.502ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:43:03 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.503ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.224ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.503ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.604ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:43:03 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[31.424ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.503ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.868ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:44:01 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.187ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.504ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.393ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:44:01 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[32.424ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.045ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.503ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:47:45 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.685ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.147ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[17.863ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:47:45 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[35.413ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.805ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:48:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.515ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.640ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.371ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:48:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32 Error 1138: Invalid use of NULL value
+[33.419ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:50:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:50:52 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.545ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:50:52 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.357ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:50:52 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[40.733ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`token` varchar(191) NOT NULL COMMENT '鉴权token',`follow_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '关注总数',`follower_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '粉丝总数',`is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_users_deleted_at (`deleted_at`))
+
+2022/05/24 22:53:31 E:/summerByteDance/DouYin_demo/app/services/user.go:24 record not found
+[1.536ms] [rows:0] SELECT `id` FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 22:53:31 E:/summerByteDance/DouYin_demo/app/services/user.go:31
+[4.178ms] [rows:1] INSERT INTO `users` (`name`,`password`,`token`,`follow_count`,`follower_count`,`is_follow`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hxl6626','$2a$04$sl9aK93B2bLTJwW28.0ypeQDNZxSlhb/ew0hERzDV3J2/SyvbjLWa','',0,0,false,'2022-05-24 22:53:31.013','2022-05-24 22:53:31.013',NULL)
+
+2022/05/24 22:53:32 E:/summerByteDance/DouYin_demo/app/services/user.go:46
+[1.075ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.096ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:59:37 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.518ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.518ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[16.344ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.490ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 22:59:37 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.998ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 22:59:37 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.314ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/24 22:59:54 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.507ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 22:59:54 E:/summerByteDance/DouYin_demo/app/services/user.go:47
+[0.510ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.317ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.938ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 23:10:33 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.564ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.509ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.052ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[6.492ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/24 23:10:33 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.723ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/24 23:10:33 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 00:41:34 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[error] failed to parse value models.Video{ID:models.ID{ID:0x0}, Author:models.User{ID:models.ID{ID:0x0}, Name:"", Password:"", Token:"", FollowCount:0x0, FollowerCount:0x0, IsFollow:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, PlayUrl:"", CoverUrl:"", FavoriteCount:0x0, CommentCount:0x0, IsFavorite:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, got error invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/models.Video's field Author: define a valid foreign key for relations or implement the Valuer/Scanner interface
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[2.134ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:41:34 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.667ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.546ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.519ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[18.212ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.489ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:41:34 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.511ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:41:34 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.374ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 00:41:34 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[error] failed to parse value models.Video{ID:models.ID{ID:0x0}, Author:models.User{ID:models.ID{ID:0x0}, Name:"", Password:"", Token:"", FollowCount:0x0, FollowerCount:0x0, IsFollow:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, PlayUrl:"", CoverUrl:"", FavoriteCount:0x0, CommentCount:0x0, IsFavorite:false, Timestamps:models.Timestamps{CreatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), UpdatedAt:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}, SoftDeletes:models.SoftDeletes{DeletedAt:gorm.DeletedAt{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Valid:false}}}, got error invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/models.Video's field Author: define a valid foreign key for relations or implement the Valuer/Scanner interface
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.552ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:45:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.195ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.550ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.508ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.943ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[6.548ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:45:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.415ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.505ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:45:09 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.547ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:45:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[1.501ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 00:45:09 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117 Error 1075: Incorrect table definition; there can be only one auto column and it must be defined as a key
+[0.505ms] [rows:0] CREATE TABLE `videos` (`id` bigint unsigned AUTO_INCREMENT,`author_id` bigint unsigned AUTO_INCREMENT,`author_name` varchar(191) NOT NULL COMMENT '用户名称',`author_password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`author_token` varchar(191) NOT NULL COMMENT '鉴权token',`author_follow_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '关注总数',`author_follower_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '粉丝总数',`author_is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注',`author_created_at` datetime NULL,`author_updated_at` datetime NULL,`author_deleted_at` datetime NULL,`play_url` varchar(191) NOT NULL DEFAULT '' COMMENT '视频地址',`cover_url` varchar(191) NOT NULL DEFAULT '' COMMENT '封面地址',`favorite_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '点赞总数',`comment_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '评论总数',`is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`,`author_id`),INDEX idx_videos_deleted_at (`author_deleted_at`,`deleted_at`))
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:51:24 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.508ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[16.174ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[8.486ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.509ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:51:24 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.507ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 00:51:24 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.580ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 00:51:24 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.063ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 00:51:24 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[35.413ms] [rows:0] CREATE TABLE `videos` (`id` bigint unsigned AUTO_INCREMENT,`author_id` bigint unsigned NOT NULL COMMENT '作者id',`play_url` varchar(191) NOT NULL DEFAULT '' COMMENT '视频地址',`cover_url` varchar(191) NOT NULL DEFAULT '' COMMENT '封面地址',`favorite_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '点赞总数',`comment_count` bigint unsigned NOT NULL DEFAULT 0 COMMENT '评论总数',`is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_videos_deleted_at (`deleted_at`))
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.519ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.554ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.640ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[14.444ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.954ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.820ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.471ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.634ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.238ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.318ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.487ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.601ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.598ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[8.487ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[1.038ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:19:11 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:19:11 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.408ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.723ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:12 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.513ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.563ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 02:20:12 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.035ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[9.485ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.512ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:13 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.036ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:13 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.511ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.580ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.489ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[8.494ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:20:13 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.997ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:20:13 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/25 02:20:38 E:/summerByteDance/DouYin_demo/app/services/feed.go:30
+[7.440ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '1970-01-01 08:00:00'
+LIMIT 30;
+
+2022/05/25 02:28:01 E:/summerByteDance/DouYin_demo/app/services/feed.go:30
+[0.265ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '1970-01-01 08:00:00'
+LIMIT 30;
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.552ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.512ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.000ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[14.271ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.488ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.821ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.510ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.624ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.508ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.679ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[5.808ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.488ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:32:05 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.052ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:32:05 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/25 02:32:10 E:/summerByteDance/DouYin_demo/app/services/feed.go:30
+[0.519ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at > '1970-01-01 08:00:00'
+LIMIT 30;
+
+2022/05/25 02:32:10 E:/summerByteDance/DouYin_demo/app/services/feed.go:42
+[0.711ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:32:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:30
+[0.579ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at > '1970-01-01 08:00:00'
+LIMIT 30;
+
+2022/05/25 02:32:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:42
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:32:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:30
+[0.000ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at > '1970-01-01 08:00:00'
+LIMIT 30;
+
+2022/05/25 02:32:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:42
+[0.554ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.509ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.509ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.109ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[10.284ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[6.493ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.000ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.709ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.700ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[5.747ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[7.405ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/25 02:38:51 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.623ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/25 02:38:51 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.509ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[1.063ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:38:52.813'
+LIMIT 30;
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.562ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.517ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:38:52.964'
+LIMIT 30;
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.000ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:38:53.083'
+LIMIT 30;
+
+2022/05/25 02:38:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.710ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:39:32 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.696ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:39:30.534'
+LIMIT 30;
+
+2022/05/25 02:39:32 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:39:39 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[1.400ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:39:38.24'
+LIMIT 30;
+
+2022/05/25 02:39:39 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[1.276ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:35.584'
+LIMIT 30;
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.516ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.506ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:35.707'
+LIMIT 30;
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.421ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:35.995'
+LIMIT 30;
+
+2022/05/25 02:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.728ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:40.813'
+LIMIT 30;
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[1.261ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:41.069'
+LIMIT 30;
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.912ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:41.232'
+LIMIT 30;
+
+2022/05/25 02:44:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.025ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:51.716'
+LIMIT 30;
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.549ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.000ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:51.877'
+LIMIT 30;
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.917ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.376ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:52.024'
+LIMIT 30;
+
+2022/05/25 02:44:53 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.540ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:46:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.358ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:52.024'
+LIMIT 30;
+
+2022/05/25 02:46:42 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.662ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/25 02:47:02 E:/summerByteDance/DouYin_demo/app/services/feed.go:29
+[0.000ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 02:44:52.024'
+LIMIT 30;
+
+2022/05/25 02:47:02 E:/summerByteDance/DouYin_demo/app/services/feed.go:41
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1

@@ -8,6 +8,7 @@ package utils
 
 import (
 	"math/rand"
+	"strconv"
 	"time"
 )
 
@@ -19,4 +20,24 @@ func RandString(len int) string {
 		bytes[i] = byte(b)
 	}
 	return string(bytes)
+}
+
+func StrToUint64(str string) uint64 {
+	res, _ := strconv.ParseUint(str, 10, 64)
+	return res
+}
+
+func StrToInt64(str string) int64 {
+	res, _ := strconv.ParseInt(str, 10, 64)
+	return res
+}
+
+func StrToUint32(str string) uint64 {
+	res, _ := strconv.ParseUint(str, 10, 32)
+	return res
+}
+
+func StrToInt32(str string) int32 {
+	res, _ := strconv.ParseInt(str, 10, 32)
+	return int32(res)
 }
