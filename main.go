@@ -2,7 +2,7 @@
  * @Author: alexander.huang
  * @Date:   2022-05-18 16:22:29
  * @Last Modified by: alexander.huang
- * @Last Modified time: 2022-05-24 02:11:12
+ * @Last Modified time: 2022-05-26 02:11:12
  */
 package main
 
@@ -24,6 +24,7 @@ func main() {
 	//load DB
 	global.App.DB = bootstrap.InitializeDB()
 	global.App.Log.Info("DB init success!")
+
 	//close DB
 	defer func() {
 		if global.App.DB != nil {
