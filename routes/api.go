@@ -35,10 +35,11 @@ func SetUserApiGroupRouters(router *gin.RouterGroup) {
 }
 
 func SetPublishApiGroupRouters(router *gin.RouterGroup) {
-
-	router.POST("/action/", app.Publish)
-	router.GET("/list/", app.Login)
-
+	authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
+	{
+		authRouter.POST("/action/", app.Publish)
+		authRouter.GET("/list/", app.PublishList)
+	}
 }
 
 func SetFavoriteApiGroupRouters(router *gin.RouterGroup) {
