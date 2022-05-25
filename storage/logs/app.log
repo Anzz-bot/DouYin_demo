@@ -517,3 +517,114 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-25 02:38:51.562]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
 [2022-05-25 02:38:51.562]	local.info	DouYin_demo/main.go:23	redis init success!
 [2022-05-25 02:38:51.602]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 09:53:24.395]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 09:53:24.562]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 09:53:24.562]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 09:53:24.668]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 09:54:02.576]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0ODY4NDIsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0NDI2NDJ9.HqcszvhTwTPQHdFiPp7BlDLFCFePc4BO9QnqPLKEfic
+[2022-05-25 09:57:27.373]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 09:57:27.521]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 09:57:27.521]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 09:57:27.588]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:10:03.469]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:10:03.620]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:10:03.620]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:10:03.695]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:17:36.417]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:17:36.528]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:17:36.529]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:17:36.712]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:22:59.234]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:22:59.344]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:22:59.344]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:22:59.435]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:30:15.126]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:30:15.234]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:30:15.234]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:30:15.314]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 14:47:57.774]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 14:47:57.927]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 14:47:57.927]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 14:47:58.291]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 14:48:19.438]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 14:48:19.566]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 14:48:19.567]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 14:48:19.639]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:06:56.634]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:06:56.770]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:06:56.770]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:06:56.852]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:19:19.453]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:19:19.585]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:19:19.585]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:19:19.661]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:21:20.835]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:21:20.951]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:21:20.951]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:21:21.037]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:39:19.037]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:39:19.157]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:39:19.157]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:39:19.250]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:45:37.663]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:45:37.794]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:45:37.794]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:45:37.910]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:59:27.105]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:59:27.237]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:59:27.237]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:59:27.334]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 18:04:16.199]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 18:04:16.216]	local.info	bootstrap/redis.go:22	127.0.0.1:ᣫ
+[2022-05-25 18:04:16.341]	local.error	bootstrap/redis.go:26	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 18:04:16.341]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 18:04:16.435]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 18:07:18.779]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 18:07:18.791]	local.info	bootstrap/redis.go:22	127.0.0.1:6379
+[2022-05-25 18:07:18.792]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 18:07:18.862]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:04:08.527]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:04:08.551]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:04:08.642]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:04:51.734]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:04:51.747]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:04:51.818]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:11:24.705]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:11:24.719]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:11:24.800]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:12:31.171]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:12:31.184]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:12:31.259]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:20:10.476]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:20:10.491]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:20:10.574]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:52:47.650]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:52:47.671]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:52:47.952]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:56:06.719]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:56:06.740]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:56:06.882]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:20:25.067]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:20:25.089]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:20:25.218]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:24:21.471]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:24:21.487]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:24:21.571]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:34:39.212]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:34:39.228]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:34:39.366]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:38:36.758]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:38:36.783]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:38:36.875]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:40:17.213]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:40:17.227]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:40:17.325]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:44:32.680]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:44:32.715]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:44:32.866]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 22:10:37.948]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 22:10:37.962]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 22:10:38.052]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 22:13:10.197]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 22:13:10.210]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 22:13:10.282]	local.info	DouYin_demo/main.go:26	DB init success!

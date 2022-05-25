@@ -25,6 +25,9 @@ func main() {
 	global.App.DB = bootstrap.InitializeDB()
 	global.App.Log.Info("DB init success!")
 
+	//load Storage
+	bootstrap.InitializeStorage()
+
 	//close DB
 	defer func() {
 		if global.App.DB != nil {

@@ -38,6 +38,7 @@ func (userService *userService) Login(params request.Login) (err error, user *mo
 	if err != nil || !utils.BcryptMakeCheck([]byte(params.Password), user.Password) {
 		err = errors.New("用户名不存在或密码错误")
 	}
+	global.NowUserID = user.ID.ID
 	return
 }
 

@@ -2,7 +2,7 @@ app:                     # viper tree
   env: local                  # environment name
   port: 8888                  # listen port
   app_name: douyin_demo       # app name
-  app_url: http://localhost   # url name
+  app_url: http://192.168.0.107   # url name
 log:                     # viper tree
   level: info                 # log level
   root_dir: ./storage/logs    # root dir
@@ -37,5 +37,27 @@ redis:                               # viper tree
   port: 6379                                # port
   db: 0                                     # num 0 db
   password:                                 # password
+
+storage:
+  default: local # 默认驱动
+  disks:
+    local:
+      root_dir: ./storage/app # 本地存储根目录
+      app_url: http://localhost:8888/storage # 本地图片 url 前部
+    ali_oss:
+      access_key_id:
+      access_key_secret:
+      bucket:
+      endpoint:
+      is_ssl: true # 是否使用 https 协议
+      is_private: false # 是否私有读
+    qi_niu:
+      access_key:
+      bucket:
+      domain:
+      secret_key:
+      is_ssl: true
+      is_private: false
+
 
 

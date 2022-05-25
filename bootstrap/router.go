@@ -55,6 +55,18 @@ func setupRouter() *gin.Engine {
 	apiGroup := router.Group("/douyin/user")
 	routes.SetUserApiGroupRouters(apiGroup)
 
+	apiGroup = router.Group("/douyin/publish")
+	routes.SetPublishApiGroupRouters(apiGroup)
+
+	apiGroup = router.Group("/douyin/favorite")
+	routes.SetFavoriteApiGroupRouters(apiGroup)
+
+	apiGroup = router.Group("/douyin/comment")
+	routes.SetCommentApiGroupRouters(apiGroup)
+
+	apiGroup = router.Group("/douyin/relation")
+	routes.SetRelationApiGroupRouters(apiGroup)
+
 	router.GET("/douyin/feed/", app.Feed)
 	return router
 }

@@ -30,7 +30,34 @@ func SetUserApiGroupRouters(router *gin.RouterGroup) {
 	authRouter := router.Group("").Use(middleware.JWTAuth(services.AppGuardName))
 	{
 		authRouter.GET("/", app.Info)
-
 	}
 
+}
+
+func SetPublishApiGroupRouters(router *gin.RouterGroup) {
+
+	router.POST("/action/", app.Publish)
+	router.GET("/list/", app.Login)
+
+}
+
+func SetFavoriteApiGroupRouters(router *gin.RouterGroup) {
+
+	router.POST("/action/", app.Register)
+	router.GET("/list/", app.Login)
+
+}
+
+func SetCommentApiGroupRouters(router *gin.RouterGroup) {
+
+	router.POST("/action/", app.Register)
+	router.GET("/list/", app.Login)
+
+}
+
+func SetRelationApiGroupRouters(router *gin.RouterGroup) {
+
+	router.POST("/action/", app.Register)
+	router.GET("/follow/list/", app.Login)
+	router.GET("/follower/list/", app.Login)
 }
