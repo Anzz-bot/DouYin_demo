@@ -845,3 +845,21 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-26 21:10:41.763]	local.info	DouYin_demo/main.go:20	log init success!
 [2022-05-26 21:10:41.786]	local.info	DouYin_demo/main.go:23	redis init success!
 [2022-05-26 21:10:41.893]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 00:47:47.722]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 00:47:47.745]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 00:47:47.900]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:20:29.911]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:20:29.933]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:20:30.065]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:23:02.551]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:23:02.571]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:23:02.660]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:23:23.397]	local.info	services/comment.go:73	invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/common/response.Comment's field User: define a valid foreign key for relations or implement the Valuer/Scanner interface
+[2022-05-27 01:34:20.572]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:34:20.605]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:34:20.740]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:42:41.499]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:42:41.523]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:42:41.624]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:43:54.785]	local.info	services/feed.go:25	no video found
+[2022-05-27 01:44:04.113]	local.info	services/feed.go:25	no video found

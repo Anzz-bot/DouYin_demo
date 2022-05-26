@@ -21420,3 +21420,2898 @@ WHERE u.id IN (
 
 2022/05/26 21:10:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
 [0.012ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/26 21:10:43 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.486ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:10:45 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.454ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-26 21:10:43.697'
+LIMIT 30;
+
+2022/05/26 21:10:45 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/26 21:10:45 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.991ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:10:45 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.396ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:11:21 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.523ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:11:24 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.642ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:11:26 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.032ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:26 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.430ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:31 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.615ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:36 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.621ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:44 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.778ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:49 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.143ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:53 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.618ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:12:59 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.675ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl662666' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:13:06 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.963ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl66266' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:13:06 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.517ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 2 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:13:06 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.784ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 2
+ORDER BY v.created_at
+
+2022/05/26 21:13:06 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.615ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 2
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:13:14 E:/summerByteDance/DouYin_demo/app/services/relation.go:88 record not found
+[0.854ms] [rows:0] SELECT * FROM `relations` WHERE (user_id = 2 and follow_id = 1) AND `relations`.`deleted_at` IS NULL ORDER BY `relations`.`id` LIMIT 1
+
+2022/05/26 21:13:14 E:/summerByteDance/DouYin_demo/app/services/relation.go:48
+[8.976ms] [rows:1] INSERT INTO `relations` (`user_id`,`follow_id`,`created_at`,`updated_at`,`deleted_at`) VALUES (2,1,'2022-05-26 21:13:14.126','2022-05-26 21:13:14.126',NULL)
+
+2022/05/26 21:13:14 E:/summerByteDance/DouYin_demo/app/services/relation.go:52
+[1.652ms] [rows:1] UPDATE `users` SET `follower_count`=follower_count + 1,`updated_at`='2022-05-26 21:13:14.135' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2022/05/26 21:13:14 E:/summerByteDance/DouYin_demo/app/services/relation.go:57
+[2.286ms] [rows:1] UPDATE `users` SET `follow_count`=follow_count + 1,`updated_at`='2022-05-26 21:13:14.138' WHERE id = 2 AND `users`.`deleted_at` IS NULL
+
+2022/05/26 21:13:20 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[1.092ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=2
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=1
+    );
+
+2022/05/26 21:13:27 E:/summerByteDance/DouYin_demo/app/services/relation.go:124
+[0.654ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=2
+WHERE u.id IN (
+    SELECT r2.user_id
+    FROM relations r2
+    WHERE r2.follow_id=1
+    );
+
+2022/05/26 21:13:31 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[0.880ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=2
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=1
+    );
+
+2022/05/26 21:13:33 E:/summerByteDance/DouYin_demo/app/services/relation.go:124
+[0.927ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=2
+WHERE u.id IN (
+    SELECT r2.user_id
+    FROM relations r2
+    WHERE r2.follow_id=1
+    );
+
+2022/05/26 21:13:42 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[1.070ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 2 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:13:42 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.716ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 2
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:13:42 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[14.466ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 2
+ORDER BY v.created_at
+
+2022/05/26 21:13:49 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[1.312ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=2
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=2
+    );
+
+2022/05/26 21:13:50 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.527ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 2
+ORDER BY v.created_at
+
+2022/05/26 21:13:50 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.511ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 2
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 2
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:13:52 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.222ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-26 21:13:50.806'
+LIMIT 30;
+
+2022/05/26 21:13:52 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/26 21:13:52 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.272ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:13:52 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.001ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:14:01 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.525ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:14:01 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.546ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:14:01 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.506ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:14:01 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.533ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/26 21:14:04 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[0.289ms] [rows:3] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=1
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=1
+    );
+
+2022/05/26 21:14:07 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.521ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:14:07 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.000ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/26 21:14:07 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.508ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/26 21:14:09 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[1.422ms] [rows:3] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=1
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=1
+    );
+
+2022/05/26 21:14:10 E:/summerByteDance/DouYin_demo/app/services/relation.go:124
+[0.565ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=1
+WHERE u.id IN (
+    SELECT r2.user_id
+    FROM relations r2
+    WHERE r2.follow_id=1
+    );
+
+2022/05/26 21:14:12 E:/summerByteDance/DouYin_demo/app/services/relation.go:88 record not found
+[0.868ms] [rows:0] SELECT * FROM `relations` WHERE (user_id = 1 and follow_id = 2) AND `relations`.`deleted_at` IS NULL ORDER BY `relations`.`id` LIMIT 1
+
+2022/05/26 21:14:12 E:/summerByteDance/DouYin_demo/app/services/relation.go:48
+[9.844ms] [rows:1] INSERT INTO `relations` (`user_id`,`follow_id`,`created_at`,`updated_at`,`deleted_at`) VALUES (1,2,'2022-05-26 21:14:12.882','2022-05-26 21:14:12.882',NULL)
+
+2022/05/26 21:14:12 E:/summerByteDance/DouYin_demo/app/services/relation.go:52
+[2.541ms] [rows:1] UPDATE `users` SET `follower_count`=follower_count + 1,`updated_at`='2022-05-26 21:14:12.893' WHERE id = 2 AND `users`.`deleted_at` IS NULL
+
+2022/05/26 21:14:12 E:/summerByteDance/DouYin_demo/app/services/relation.go:57
+[2.595ms] [rows:1] UPDATE `users` SET `follow_count`=follow_count + 1,`updated_at`='2022-05-26 21:14:12.895' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2022/05/26 21:14:16 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.806ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/26 21:14:16 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.742ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[4.132ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.515ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.919ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[1.540ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[20.971ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[14.471ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.095ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.000ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.998ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.652ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.479ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[13.474ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.895ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_disk_type'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.725ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.690ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.543ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND table_type = 'BASE TABLE'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.912ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.512ms] [rows:-] SELECT * FROM `comments` LIMIT 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.482ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'comments' ORDER BY ORDINAL_POSITION
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.358ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.510ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND index_name = 'idx_comments_deleted_at'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.924ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND table_type = 'BASE TABLE'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.645ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.509ms] [rows:-] SELECT * FROM `favorites` LIMIT 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.953ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' ORDER BY ORDINAL_POSITION
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.223ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND index_name = 'idx_favorites_deleted_at'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.021ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.749ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND table_type = 'BASE TABLE'
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.569ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `relations` LIMIT 1
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.441ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'relations' ORDER BY ORDINAL_POSITION
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 00:47:47 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.523ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 00:47:47 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/27 00:48:08 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[3.271ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 00:48:06.708'
+LIMIT 30;
+
+2022/05/27 00:48:08 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.689ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 00:48:08 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.335ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 00:48:18 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.651ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 00:48:18 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.532ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 00:48:18 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.599ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 00:48:18 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[2.829ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 00:48:28 E:/summerByteDance/DouYin_demo/app/services/comment.go:42
+[5.243ms] [rows:1] INSERT INTO `comments` (`user_id`,`video_id`,`comment_text`,`created_at`,`updated_at`,`deleted_at`) VALUES (1,1,'1111','2022-05-27 00:48:28.244','2022-05-27 00:48:28.244',NULL)
+
+2022/05/27 00:48:28 E:/summerByteDance/DouYin_demo/app/services/comment.go:46
+[3.571ms] [rows:1] UPDATE `videos` SET `comment_count`=comment_count + 1,`updated_at`='2022-05-27 00:48:28.25' WHERE id = 1 AND `videos`.`deleted_at` IS NULL
+
+2022/05/27 00:49:11 E:/summerByteDance/DouYin_demo/app/services/comment.go:42
+[2.690ms] [rows:1] INSERT INTO `comments` (`user_id`,`video_id`,`comment_text`,`created_at`,`updated_at`,`deleted_at`) VALUES (1,1,'1111','2022-05-27 00:49:11.509','2022-05-27 00:49:11.509',NULL)
+
+2022/05/27 00:49:11 E:/summerByteDance/DouYin_demo/app/services/comment.go:46
+[2.822ms] [rows:1] UPDATE `videos` SET `comment_count`=comment_count + 1,`updated_at`='2022-05-27 00:49:11.512' WHERE id = 1 AND `videos`.`deleted_at` IS NULL
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[2.429ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.503ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.039ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.504ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[19.680ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[14.473ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.510ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.741ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:29 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.817ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:29 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.709ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[10.482ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.832ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_disk_type'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.559ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.557ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.527ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.514ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[1.034ms] [rows:-] SELECT * FROM `comments` LIMIT 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.076ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'comments' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.336ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND index_name = 'idx_comments_deleted_at'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.592ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.576ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.780ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `favorites` LIMIT 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[14.466ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.245ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.505ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND index_name = 'idx_favorites_deleted_at'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.031ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.517ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.717ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `relations` LIMIT 1
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.457ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'relations' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:20:30 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.034ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:20:30 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/27 01:21:07 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[4.025ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:21:06.192'
+LIMIT 30;
+
+2022/05/27 01:21:07 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.520ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:21:08 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.870ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:21:08 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.619ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:21:08 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[2.037ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:21:08 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.632ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:21:08 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.056ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:21:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.847ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:21:09.918'
+LIMIT 30;
+
+2022/05/27 01:21:11 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:21:11 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[2.436ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:21:11 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.002ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:21:22 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.379ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:21:22 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.838ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:21:22 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.861ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:21:22 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[9.729ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:21:27 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[1.093ms] [rows:1] SELECT * FROM `users` WHERE name = '' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:22:03 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.538ms] [rows:1] SELECT * FROM `users` WHERE name = '' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.535ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.058ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.578ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[13.968ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[10.297ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.948ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.509ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.520ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.808ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.489ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[11.479ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.847ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_disk_type'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.513ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.521ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.686ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.022ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `comments` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.184ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'comments' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.548ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND index_name = 'idx_comments_deleted_at'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.523ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.703ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.565ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `favorites` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[6.585ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.919ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND index_name = 'idx_favorites_deleted_at'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.512ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.662ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.509ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.570ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `relations` LIMIT 1
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.414ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'relations' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:23:02 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.018ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:23:02 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/27 01:23:06 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.017ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:23:06 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.508ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:23:11 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.718ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:23:11 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.520ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:23:12 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[0.995ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:23:12 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.055ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:23:21 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.061ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:23:21.008'
+LIMIT 30;
+
+2022/05/27 01:23:21 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.533ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:23:21 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.000ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:23:21 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.071ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:23:21 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.419ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:23:23 E:/summerByteDance/DouYin_demo/app/services/comment.go:81 invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/common/response.Comment's field User: define a valid foreign key for relations or implement the Valuer/Scanner interface
+[2.679ms] [rows:2] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=1
+ORDER BY c.updated_at;
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.507ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.263ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.515ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.522ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[22.584ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[12.480ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.893ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.513ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.003ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.515ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.681ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[19.138ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[15.957ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.998ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_disk_type'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.511ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.613ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.523ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.535ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `comments` LIMIT 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[8.256ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'comments' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.998ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND index_name = 'idx_comments_deleted_at'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.997ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.997ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `favorites` LIMIT 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[12.186ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.061ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND index_name = 'idx_favorites_deleted_at'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.524ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.814ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.511ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `relations` LIMIT 1
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[11.377ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'relations' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:34:20 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.182ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:34:20 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/27 01:34:32 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.513ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:34:32 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[1.658ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:34:32 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.213ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:34:32 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.998ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:34:39 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.995ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:34:39.155'
+LIMIT 30;
+
+2022/05/27 01:34:39 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:34:39 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.532ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:34:39 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[4.607ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:34:39 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.352ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:34:42 E:/summerByteDance/DouYin_demo/app/services/comment.go:81
+[1.533ms] [rows:2] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=1
+ORDER BY c.updated_at;
+
+2022/05/27 01:35:14 E:/summerByteDance/DouYin_demo/app/services/comment.go:81
+[0.552ms] [rows:2] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=1
+ORDER BY c.updated_at;
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.504ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.513ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.017ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.952ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[22.073ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[14.471ms] [rows:0] ALTER TABLE `users` MODIFY COLUMN `is_follow` boolean NOT NULL DEFAULT false COMMENT '是否关注'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.793ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.785ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.676ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.016ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.662ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `videos` LIMIT 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[8.554ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'videos' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:32
+[8.489ms] [rows:0] ALTER TABLE `videos` MODIFY COLUMN `is_favorite` boolean NOT NULL DEFAULT false COMMENT '是否点赞'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.952ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_disk_type'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.584ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'videos' AND index_name = 'idx_videos_deleted_at'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.515ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.551ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.521ms] [rows:-] SELECT * FROM `comments` LIMIT 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.663ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'comments' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.121ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'comments' AND index_name = 'idx_comments_deleted_at'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.545ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.031ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `favorites` LIMIT 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[8.207ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.056ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'favorites' AND index_name = 'idx_favorites_deleted_at'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.504ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.614ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND table_type = 'BASE TABLE'
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[0.517ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:148
+[0.000ms] [rows:-] SELECT * FROM `relations` LIMIT 1
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:166
+[7.394ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'douyin_demo' AND table_name = 'relations' ORDER BY ORDINAL_POSITION
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:228
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/05/27 01:42:41 C:/Users/13199425052/go/pkg/mod/gorm.io/driver/mysql@v1.3.3/migrator.go:231
+[1.033ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'douyin_demo%' ORDER BY SCHEMA_NAME='douyin_demo' DESC limit 1
+
+2022/05/27 01:42:41 E:/summerByteDance/DouYin_demo/bootstrap/db.go:117
+[0.000ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'douyin_demo' AND table_name = 'relations' AND index_name = 'idx_relations_deleted_at'
+
+2022/05/27 01:43:13 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.933ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:43:11.793'
+LIMIT 30;
+
+2022/05/27 01:43:13 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.871ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:43:14 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.708ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:15 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.158ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:17 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.410ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:43:15.384'
+LIMIT 30;
+
+2022/05/27 01:43:17 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:43:17 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.290ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:17 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.762ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:24 E:/summerByteDance/DouYin_demo/app/services/user.go:37
+[0.652ms] [rows:1] SELECT * FROM `users` WHERE name = 'hxl6626' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:43:24 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[1.356ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:43:24 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.603ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:24 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.509ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:43:29 E:/summerByteDance/DouYin_demo/app/services/user.go:48
+[0.800ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/05/27 01:43:29 E:/summerByteDance/DouYin_demo/app/services/publish.go:92
+[1.663ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+     IF(f.id IS NULL,false,true) AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+LEFT JOIN favorites f on u.id = f.user_id AND v.id = f.video_id
+WHERE author_id = 1
+ORDER BY v.created_at
+
+2022/05/27 01:43:29 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.449ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:29 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.541ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 21:24:52'
+LIMIT 30;
+
+2022/05/27 01:43:29 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.555ms] [rows:1] SELECT created_at FROM videos WHERE id = 2
+
+2022/05/27 01:43:31 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[0.522ms] [rows:0] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=12
+ORDER BY c.updated_at;
+
+2022/05/27 01:43:35 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[1.341ms] [rows:0] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=12
+ORDER BY c.updated_at;
+
+2022/05/27 01:43:35 E:/summerByteDance/DouYin_demo/app/services/comment.go:49
+[7.178ms] [rows:1] INSERT INTO `comments` (`user_id`,`video_id`,`comment_text`,`created_at`,`updated_at`,`deleted_at`) VALUES (1,12,'132','2022-05-27 01:43:35.664','2022-05-27 01:43:35.664',NULL)
+
+2022/05/27 01:43:35 E:/summerByteDance/DouYin_demo/app/services/comment.go:53
+[6.709ms] [rows:1] UPDATE `videos` SET `comment_count`=comment_count + 1,`updated_at`='2022-05-27 01:43:35.672' WHERE id = 12 AND `videos`.`deleted_at` IS NULL
+
+2022/05/27 01:43:39 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[1.779ms] [rows:1] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=12
+ORDER BY c.updated_at;
+
+2022/05/27 01:43:46 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.337ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 3
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 3
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:48 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.159ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:51 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.792ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.599ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 21:20:59'
+LIMIT 30;
+
+2022/05/27 01:43:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1
+
+2022/05/27 01:43:54 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.684ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:43:54 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.106ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-24 02:23:38'
+LIMIT 30;
+
+2022/05/27 01:44:04 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.000ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-24 02:23:38'
+LIMIT 30;
+
+2022/05/27 01:44:17 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.241ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:44:24 E:/summerByteDance/DouYin_demo/app/services/relation.go:115
+[2.456ms] [rows:4] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=1
+WHERE u.id IN (
+    SELECT r2.follow_id
+    FROM relations r2
+    WHERE r2.user_id=1
+    );
+
+2022/05/27 01:44:26 E:/summerByteDance/DouYin_demo/app/services/relation.go:124
+[0.000ms] [rows:1] SELECT
+    u.id AS id,
+    u.name AS name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow
+FROM users u
+LEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=1
+WHERE u.id IN (
+    SELECT r2.user_id
+    FROM relations r2
+    WHERE r2.follow_id=1
+    );
+
+2022/05/27 01:44:35 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[1.482ms] [rows:4] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-27 01:44:33.426'
+LIMIT 30;
+
+2022/05/27 01:44:35 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.652ms] [rows:1] SELECT created_at FROM videos WHERE id = 5
+
+2022/05/27 01:44:35 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.036ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:44:37 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.283ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.526ms] [rows:2] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 21:24:52'
+LIMIT 30;
+
+2022/05/27 01:44:37 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 2
+
+2022/05/27 01:44:39 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[3.993ms] [rows:1] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=12
+ORDER BY c.updated_at;
+
+2022/05/27 01:44:42 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.045ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 3
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 3
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:44:44 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[0.996ms] [rows:0] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=2
+ORDER BY c.updated_at;
+
+2022/05/27 01:44:48 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[0.580ms] [rows:0] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=2
+ORDER BY c.updated_at;
+
+2022/05/27 01:44:48 E:/summerByteDance/DouYin_demo/app/services/comment.go:49
+[3.935ms] [rows:1] INSERT INTO `comments` (`user_id`,`video_id`,`comment_text`,`created_at`,`updated_at`,`deleted_at`) VALUES (1,2,'222','2022-05-27 01:44:48.162','2022-05-27 01:44:48.162',NULL)
+
+2022/05/27 01:44:48 E:/summerByteDance/DouYin_demo/app/services/comment.go:53
+[3.485ms] [rows:1] UPDATE `videos` SET `comment_count`=comment_count + 1,`updated_at`='2022-05-27 01:44:48.166' WHERE id = 2 AND `videos`.`deleted_at` IS NULL
+
+2022/05/27 01:44:50 E:/summerByteDance/DouYin_demo/app/services/comment.go:87
+[1.475ms] [rows:1] SELECT
+    c.id AS id,
+    u.id AS user_id,
+    u.name AS user_name,
+    u.follow_count AS follow_count,
+    u.follower_count AS follower_count,
+    IF(r.id IS NULL,false,true) AS is_follow,
+    c.comment_text AS content,
+    c.created_at AS create_date
+FROM comments c
+LEFT JOIN users u ON c.user_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE c.video_id=2
+ORDER BY c.updated_at;
+
+2022/05/27 01:44:57 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.337ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:45:00 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.555ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:45:01 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[1.079ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 1
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 1
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:45:02 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.723ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 3
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 3
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:45:04 E:/summerByteDance/DouYin_demo/app/services/favorite.go:78
+[0.764ms] [rows:0] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    IF(r.id IS NULL,false,true) AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    true AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+LEFT JOIN relations r on u.id = r.follow_id AND r.user_id = 3
+WHERE v.id IN(
+    SELECT video_id
+    FROM favorites
+    WHERE user_id = 3
+    )
+ORDER BY v.created_at;
+
+2022/05/27 01:45:04 E:/summerByteDance/DouYin_demo/app/services/feed.go:35
+[0.864ms] [rows:1] SELECT
+    v.ID AS id,
+    u.id AS author_id,
+    u.name AS author_name,
+    u.follow_count AS author_follow_count,
+    u.follower_count AS author_follower_count,
+    false AS author_is_follow,
+    v.play_url AS play_url,
+    v.cover_url AS cover_url,
+    v.favorite_count AS favorite_count,
+    v.comment_count AS comment_count,
+    false AS is_favorite
+FROM videos v
+LEFT JOIN users u ON v.author_id=u.id
+WHERE v.created_at < '2022-05-25 21:20:59'
+LIMIT 30;
+
+2022/05/27 01:45:04 E:/summerByteDance/DouYin_demo/app/services/feed.go:47
+[0.000ms] [rows:1] SELECT created_at FROM videos WHERE id = 1

@@ -51,8 +51,8 @@ func SetFavoriteApiGroupRouters(router *gin.RouterGroup) {
 
 func SetCommentApiGroupRouters(router *gin.RouterGroup) {
 
-	//	router.POST("/action/", app.Register)
-	//	router.GET("/list/", app.Login)
+	router.POST("/action/", app.Comment)
+	router.GET("/list/", app.CommentList)
 
 }
 
