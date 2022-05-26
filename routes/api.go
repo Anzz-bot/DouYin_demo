@@ -44,21 +44,21 @@ func SetPublishApiGroupRouters(router *gin.RouterGroup) {
 
 func SetFavoriteApiGroupRouters(router *gin.RouterGroup) {
 
-	router.POST("/action/", app.Register)
-	router.GET("/list/", app.Login)
+	router.POST("/action/", app.Favorite)
+	//	authRouter.GET("/list/", app.FavoriteList)
 
 }
 
 func SetCommentApiGroupRouters(router *gin.RouterGroup) {
 
-	router.POST("/action/", app.Register)
-	router.GET("/list/", app.Login)
+	//	router.POST("/action/", app.Register)
+	//	router.GET("/list/", app.Login)
 
 }
 
 func SetRelationApiGroupRouters(router *gin.RouterGroup) {
 
-	router.POST("/action/", app.Register)
-	router.GET("/follow/list/", app.Login)
-	router.GET("/follower/list/", app.Login)
+	//router.POST("/action/", app.Register)
+	//router.GET("/follow/list/", app.Login)
+	//router.GET("/follower/list/", app.Login)
 }

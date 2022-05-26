@@ -16,7 +16,7 @@ type VideoUpload struct {
 	Title string                `form:"title" json:"title" binding:"required"`
 }
 type PublishList struct {
-	UserId string `form:"user_id" json:"user_id" `
+	UserId uint64 `form:"user_id" json:"user_id" `
 	Token  string `form:"token" json:"token" `
 }
 

@@ -1,0 +1,32 @@
+package app
+
+import (
+	"github.com/Anzz-bot/DouYin_demo/app/common/request"
+	"github.com/Anzz-bot/DouYin_demo/app/common/response"
+	"github.com/Anzz-bot/DouYin_demo/app/services"
+	"github.com/Anzz-bot/DouYin_demo/global"
+	"github.com/Anzz-bot/DouYin_demo/utils"
+	"github.com/gin-gonic/gin"
+)
+
+func Favorite(c *gin.Context) {
+	var form request.Favorite
+	global.App.Log.Info(c.Query("user_id"))
+	user_id := global.NowUserID
+	global.App.Log.Info(string(user_id))
+	token := c.Query("token")
+	video_id := utils.StrToUint64(c.Query("video_id"))
+	action_type := utils.StrToInt32(c.Query("action_type"))
+	form = request.Favorite{
+		UserId:     user_id,
+		Token:      token,
+		VideoId:    video_id,
+		ActionType: action_type,
+	}
+	if err := services.FavoriteService.Favorite(form); err != nil {
+		response.BusinessFail(c, err.Error())
+	} else {
+		response.Success(c, response.ResponseSuccess)
+	}
+
+}

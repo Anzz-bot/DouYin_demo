@@ -12,7 +12,6 @@ import (
 	"github.com/Anzz-bot/DouYin_demo/app/common/response"
 	"github.com/Anzz-bot/DouYin_demo/app/models"
 	"github.com/Anzz-bot/DouYin_demo/global"
-	"github.com/Anzz-bot/DouYin_demo/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/jassue/go-storage/storage"
 	uuid "github.com/satori/go.uuid"
@@ -75,7 +74,7 @@ func (publishService *publishService) Publish(c *gin.Context, params request.Vid
 }
 
 func (publishService *publishService) PublishList(param request.PublishList) (error, response.PublishListResponse) {
-	videoAuthorApis, err := publishService.GetPublishListByAuthorID(utils.StrToUint64(param.UserId))
+	videoAuthorApis, err := publishService.GetPublishListByAuthorID(param.UserId)
 	publishListResponse := response.PublishListResponse{
 		VideoList: videoAuthorApis,
 	}

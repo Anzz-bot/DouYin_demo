@@ -10,6 +10,7 @@ import (
 	"github.com/Anzz-bot/DouYin_demo/app/common/request"
 	"github.com/Anzz-bot/DouYin_demo/app/common/response"
 	"github.com/Anzz-bot/DouYin_demo/app/services"
+	"github.com/Anzz-bot/DouYin_demo/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -40,7 +41,7 @@ func PublishList(c *gin.Context) {
 	token := c.Query("token")
 	user_id := c.Query("user_id")
 	form = request.PublishList{
-		UserId: user_id,
+		UserId: utils.StrToUint64(user_id),
 		Token:  token,
 	}
 	if err, publishListResponse := services.PublishService.PublishList(form); err != nil {

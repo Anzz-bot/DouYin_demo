@@ -643,3 +643,185 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-26 02:05:00.434]	local.info	DouYin_demo/main.go:20	log init success!
 [2022-05-26 02:05:00.461]	local.info	DouYin_demo/main.go:23	redis init success!
 [2022-05-26 02:05:00.558]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 02:35:21.871]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 02:35:21.887]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 02:35:22.024]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 12:59:55.006]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 12:59:55.078]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 12:59:55.398]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:35:39.084]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:35:39.104]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:35:39.254]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:47:03.273]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:47:03.293]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:47:03.419]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:50:28.584]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:50:28.597]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:50:28.679]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:53:36.622]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:53:36.637]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:53:36.763]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:00:28.852]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:33.137]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:37.200]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:46.070]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:50.828]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:59.077]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:01:00.594]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:04:49.360]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:04:49.382]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:04:49.476]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:05:21.979]	local.info	services/favorite.go:17	 
+[2022-05-26 16:05:21.979]	local.info	services/favorite.go:38	 
+[2022-05-26 16:07:24.372]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:07:24.397]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:07:24.482]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:07:44.524]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:07:44.525]	local.info	controllers/favorite.go:16	 
+[2022-05-26 16:07:44.525]	local.info	services/favorite.go:17	 
+[2022-05-26 16:07:44.525]	local.info	services/favorite.go:38	 
+[2022-05-26 16:08:29.874]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:08:29.874]	local.info	controllers/favorite.go:16	 
+[2022-05-26 16:08:29.874]	local.info	services/favorite.go:17	 
+[2022-05-26 16:08:29.874]	local.info	services/favorite.go:38	 
+[2022-05-26 16:17:56.270]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:17:56.294]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:17:56.398]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:18:25.591]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:25.591]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:25.592]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:25.592]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:48.758]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:48.759]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:48.759]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:49.511]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:49.511]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:49.511]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:49.511]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:50.144]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:50.145]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:50.145]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:52.707]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:52.707]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:52.707]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:52.708]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:53.376]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:53.377]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:53.377]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:57.028]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:57.029]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:57.029]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:57.029]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:57.562]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:57.562]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:57.562]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:02.479]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:19:02.480]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:19:02.480]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:02.480]	local.info	services/favorite.go:38	
+[2022-05-26 16:19:21.861]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:19:21.861]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:19:21.862]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:21.862]	local.info	services/favorite.go:38	
+[2022-05-26 16:20:30.748]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:20:33.476]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:26:28.480]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:28.480]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:28.480]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:28.480]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:29.128]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:29.128]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:29.128]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:31.610]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:31.612]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:31.612]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:31.612]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:32.045]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:32.045]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:32.045]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:35.889]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:35.889]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:35.889]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:35.889]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:36.209]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:36.210]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:36.210]	local.info	services/favorite.go:17	
+[2022-05-26 16:37:50.242]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:37:50.243]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:37:50.243]	local.info	services/favorite.go:17	
+[2022-05-26 16:37:50.243]	local.info	services/favorite.go:38	
+[2022-05-26 16:38:41.081]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:41.081]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:41.081]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:41.081]	local.info	services/favorite.go:38	
+[2022-05-26 16:38:42.524]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:42.525]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:42.525]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:46.106]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:46.107]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:46.107]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:46.107]	local.info	services/favorite.go:38	
+[2022-05-26 16:39:38.577]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:39:38.578]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:39:38.578]	local.info	services/favorite.go:17	
+[2022-05-26 16:39:38.578]	local.info	services/favorite.go:38	
+[2022-05-26 18:33:41.529]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 18:33:41.548]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 18:33:41.690]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 18:35:18.572]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:35:18.572]	local.info	controllers/favorite.go:16	 
+[2022-05-26 18:35:18.572]	local.info	services/favorite.go:17	 
+[2022-05-26 18:35:18.572]	local.info	services/favorite.go:38	 
+[2022-05-26 18:35:57.279]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:35:57.279]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:35:57.279]	local.info	services/favorite.go:17	
+[2022-05-26 18:35:57.279]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:04.830]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:04.831]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:04.831]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:13.147]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:13.147]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:13.147]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:13.147]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:24.964]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:24.964]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:24.964]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:24.964]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:29.630]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:29.631]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:29.631]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:42.680]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:42.681]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:42.681]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:42.681]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:48.213]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:48.214]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:48.214]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:51.101]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:51.102]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:51.102]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:51.102]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:51.551]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:51.551]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:51.551]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.002]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.002]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.002]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.002]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.234]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.235]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.235]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.413]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.414]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.414]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.414]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.598]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.598]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.598]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.781]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.782]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.782]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.782]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.992]	local.info	services/favorite.go:17	
