@@ -73,9 +73,9 @@ func (publishService *publishService) Publish(c *gin.Context, params request.Vid
 	return
 }
 
-func (publishService *publishService) PublishList(param request.PublishList) (error, response.PublishListResponse) {
+func (publishService *publishService) PublishList(param request.PublishList) (err error, publishListResponse response.PublishListResponse) {
 	videoAuthorApis, err := publishService.GetPublishListByAuthorID(param.UserId)
-	publishListResponse := response.PublishListResponse{
+	publishListResponse = response.PublishListResponse{
 		VideoList: videoAuthorApis,
 	}
 	if err != nil {

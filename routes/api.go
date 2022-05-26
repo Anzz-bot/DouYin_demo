@@ -45,7 +45,7 @@ func SetPublishApiGroupRouters(router *gin.RouterGroup) {
 func SetFavoriteApiGroupRouters(router *gin.RouterGroup) {
 
 	router.POST("/action/", app.Favorite)
-	//	authRouter.GET("/list/", app.FavoriteList)
+	router.GET("/list/", app.FavoriteList)
 
 }
 

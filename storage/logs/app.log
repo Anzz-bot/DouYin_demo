@@ -825,3 +825,6 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:14	
 [2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:16	
 [2022-05-26 18:36:52.992]	local.info	services/favorite.go:17	
+[2022-05-26 19:06:12.048]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 19:06:12.063]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 19:06:12.177]	local.info	DouYin_demo/main.go:26	DB init success!
