@@ -1,0 +1,865 @@
+[181818-31-58 59:315:3118.755]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 20:37:18.642]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 21:56:21.321]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 21:56:23.361]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it."}
+[2022-05-18 21:56:23.361]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:02:45.353]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:02:47.390]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connectex: No connection could be made because the target machine actively refused it."}
+[2022-05-18 22:02:47.390]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:03:31.149]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:03:31.168]	local.error	bootstrap/db.go:103	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}
+[2022-05-18 22:03:31.168]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:04:19.433]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:04:19.452]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 22:09:55.087]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 22:09:55.165]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 23:25:01.840]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 23:25:01.937]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-18 23:26:54.001]	local.info	DouYin_demo/main.go:22	log init success!
+[2022-05-18 23:26:54.100]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-19 01:25:29.695]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 01:25:29.731]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 01:27:03.991]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 01:27:04.027]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 01:28:32.652]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 01:28:32.690]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 01:29:08.696]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 01:29:08.729]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 01:44:53.391]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 01:44:53.428]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 02:49:55.166]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 02:49:55.208]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 03:14:07.582]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 03:14:07.663]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 03:17:23.114]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 03:17:23.159]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 03:46:06.618]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 03:46:06.674]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 04:01:39.866]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 04:01:39.931]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 05:10:58.078]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 05:10:58.149]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 05:24:02.136]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 05:24:02.192]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 13:59:59.080]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 13:59:59.149]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:03:51.748]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:03:51.795]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:05:42.923]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:05:42.973]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:06:53.257]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 14:06:53.297]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 14:06:58.043]	local.info	services/user.go:25	11111111111
+[2022-05-19 14:06:58.043]	local.info	services/user.go:28	221
+[2022-05-19 14:08:07.441]	local.info	services/user.go:25	11111111111
+[2022-05-19 14:08:07.441]	local.info	services/user.go:31	11111111111
+[2022-05-19 14:08:07.442]	local.info	services/user.go:33	11111111111
+[2022-05-19 16:00:35.993]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:00:36.197]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:06:55.802]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:06:55.840]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:07:06.805]	local.info	response/user.go:22	qay12345
+[2022-05-19 16:30:59.391]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:30:59.446]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:32:29.174]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:32:29.208]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 16:58:49.977]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 16:58:50.046]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:02:48.041]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:02:48.085]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:04:47.355]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:04:47.392]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:04:53.817]	local.info	services/user.go:25	13111
+[2022-05-19 17:04:53.817]	local.info	services/user.go:27	13222
+[2022-05-19 17:04:53.817]	local.info	response/user.go:22	vvvffff
+[2022-05-19 17:06:22.566]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:06:22.604]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 17:06:42.275]	local.info	response/user.go:22	dasdasdasxxxxxxx
+[2022-05-19 17:08:17.502]	local.info	response/user.go:22	dasdasdmmmm
+[2022-05-19 17:22:20.555]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 17:22:20.602]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 21:42:09.106]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-19 21:42:09.308]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-19 21:42:20.137]	local.info	response/user.go:28	dasdasdmmmmdsa
+[2022-05-23 16:05:39.816]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 16:05:39.889]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 16:29:49.968]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 16:29:50.032]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 16:40:36.806]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 16:40:36.855]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 16:49:57.141]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 16:49:57.188]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:02:10.805]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:02:11.159]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:05:33.874]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:05:33.918]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:11:36.652]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:11:36.694]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:13:40.148]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:13:40.192]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:21:28.672]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:21:28.720]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:24:20.374]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:24:20.422]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:26:44.686]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:26:44.725]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:29:14.458]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:29:14.497]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:31:39.663]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:31:39.696]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:32:30.590]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:32:30.622]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:32:57.224]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:32:57.258]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:41:02.646]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:41:02.680]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:41:04.155]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 18:43:23.049]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 18:43:34.987]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 18:44:59.523]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 18:55:45.819]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:55:45.869]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:55:49.262]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 18:58:40.149]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:58:40.192]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:59:06.372]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 18:59:06.415]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 18:59:07.888]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 19:12:32.657]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:12:32.713]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:12:35.354]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 19:25:51.127]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:25:51.178]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:25:53.943]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 19:27:25.272]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:27:25.306]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:27:28.085]	local.info	middleware/jwt.go:15	aaa
+[2022-05-23 19:46:05.861]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:46:05.916]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:47:04.152]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:47:04.199]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:47:05.686]	local.info	middleware/jwt.go:14	/douyin/user/?user_id=20&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNDk2MjUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA1NDI1fQ.xcjQR2FSwOagdP803VUPSQjEiKPgP8lDzRvFjW1cUdMaaa
+[2022-05-23 19:50:10.836]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:50:10.900]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:50:12.987]	local.info	middleware/jwt.go:14	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNDk4MTIsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA1NjEyfQ.p3dU8dDHdEZ3cARjEakdEFNUOMBgd4mS5a64pTzYc4saaa
+[2022-05-23 19:51:53.269]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:51:53.377]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:51:54.453]	local.info	middleware/jwt.go:25	illegal base64 data at input byte 29
+[2022-05-23 19:56:33.202]	local.info	middleware/jwt.go:25	illegal base64 data at input byte 29
+[2022-05-23 19:56:42.639]	local.info	middleware/jwt.go:25	illegal base64 data at input byte 29
+[2022-05-23 19:57:45.419]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 19:57:45.453]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 19:57:52.052]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTAyNzIsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA2MDcyfQ.eSeACKKM872bcCbWVIVMmwAQh24ZUrJaEmzqoH6c304
+[2022-05-23 19:57:52.053]	local.info	middleware/jwt.go:26	illegal base64 data at input byte 29
+[2022-05-23 20:01:55.303]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTA1MTUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA2MzE1fQ.8rHS05uqorKX4aewejJogmSmhVXMQXYinQyf_hxLAIo
+[2022-05-23 20:01:55.303]	local.info	middleware/jwt.go:26	illegal base64 data at input byte 29
+[2022-05-23 20:13:12.201]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:13:12.256]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:13:14.203]	local.info	middleware/jwt.go:32	"HS256","typ":"JWT"}
+[2022-05-23 20:13:14.203]	local.info	middleware/jwt.go:33	token contains an invalid number of segments
+[2022-05-23 20:14:25.203]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:14:25.247]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:14:29.902]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTEyNjksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA3MDY5fQ.kW7i02_f00LEBbie504EBcCjFzT8zS4Slg8Lt8T-aUc
+[2022-05-23 20:14:29.902]	local.info	middleware/jwt.go:26	illegal base64 data at input byte 29
+[2022-05-23 20:22:06.074]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:22:06.117]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:22:07.141]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTE3MjcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA3NTI3fQ.f0nof59LmhsK9WZqKAEqyJyX6kjTbeUupAJFiBlnyIc
+[2022-05-23 20:22:07.141]	local.info	middleware/jwt.go:26	
+[2022-05-23 20:22:07.142]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 20:39:07.378]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:39:07.434]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:46:10.933]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:46:10.980]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:51:27.923]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM0ODcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5Mjg3fQ.RTFIYgdWJsiZX-kQRyKVc66Cvaz749EkJz5pc_ErWf4
+[2022-05-23 20:51:27.924]	local.info	middleware/jwt.go:26	
+[2022-05-23 20:51:27.924]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 20:51:53.595]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:51:53.632]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:51:55.722]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1MTUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzE1fQ.bHVUBM04U9QmnOTmsbR5fIsFzF0RR6rwkqHNfA7-a4s
+[2022-05-23 20:51:55.722]	local.info	middleware/jwt.go:26	bHVUBM04U9QmnOTmsbR5fIsFzF0RR6rwkqHNfA7-a4s
+[2022-05-23 20:52:43.290]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1NjMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzYzfQ.pGTc993D0hxDqNoU8qsGRL7IX-ext5-fQY1pC6dLHaQ
+[2022-05-23 20:52:43.290]	local.info	middleware/jwt.go:26	pGTc993D0hxDqNoU8qsGRL7IX-ext5-fQY1pC6dLHaQ
+[2022-05-23 20:52:44.521]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1NjQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzY0fQ.2bbsurwFHVBUCj6RISgXNQg-BpmsLHb0gnsRgcLjBg0
+[2022-05-23 20:52:44.521]	local.info	middleware/jwt.go:26	2bbsurwFHVBUCj6RISgXNQg-BpmsLHb0gnsRgcLjBg0
+[2022-05-23 20:52:45.326]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1NjUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzY1fQ.DRhsyWZmzrcn5iXoY7lvqQJt7twURwf3iJOCfTQFIRw
+[2022-05-23 20:52:45.326]	local.info	middleware/jwt.go:26	DRhsyWZmzrcn5iXoY7lvqQJt7twURwf3iJOCfTQFIRw
+[2022-05-23 20:52:48.068]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1NjgsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzY4fQ.AidOFKoXTy1Q63bz833tGtiePWPTkU4fK5eS-ouEeW4
+[2022-05-23 20:52:48.068]	local.info	middleware/jwt.go:26	AidOFKoXTy1Q63bz833tGtiePWPTkU4fK5eS-ouEeW4
+[2022-05-23 20:52:49.602]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1NjksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5MzY5fQ.kLMD9HtYQFH1berItiR3dX6j8CJkGTeQXXpdmMwmZDo
+[2022-05-23 20:52:49.602]	local.info	middleware/jwt.go:26	kLMD9HtYQFH1berItiR3dX6j8CJkGTeQXXpdmMwmZDo
+[2022-05-23 20:53:13.300]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:53:13.343]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:53:15.219]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM1OTUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5Mzk1fQ.dmuZPg_luUFCMDhRYJJu0RFwyLoBhdVWFICTFD2wCjU
+[2022-05-23 20:53:15.220]	local.info	middleware/jwt.go:26	
+[2022-05-23 20:53:15.220]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 20:56:27.086]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM3ODcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5NTg3fQ.Vrq1NMtE4e_7n5uoG92t6d5bfJHUlL4L2yd6gxtP610
+[2022-05-23 20:56:27.086]	local.info	middleware/jwt.go:26	
+[2022-05-23 20:56:27.086]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 20:57:20.496]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:57:20.533]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:57:21.618]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM4NDEsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5NjQxfQ.sDzppa-iTn4vUbLD8S2YkuW-e6SpONPRXnK4D8LbOe4
+[2022-05-23 20:57:21.618]	local.info	middleware/jwt.go:26	sDzppa-iTn4vUbLD8S2YkuW-e6SpONPRXnK4D8LbOe4
+[2022-05-23 20:57:24.685]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM4NDQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5NjQ0fQ.kmz6RimUWJux5LRk6dXof5mQ8fSzF3GuZhxtW7a5Oew
+[2022-05-23 20:57:24.686]	local.info	middleware/jwt.go:26	kmz6RimUWJux5LRk6dXof5mQ8fSzF3GuZhxtW7a5Oew
+[2022-05-23 20:59:10.314]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 20:59:10.348]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 20:59:14.303]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTM5NTQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5NzU0fQ.Q8cqlDU4GiMffhRIUf2PjqPza78lpWoP3diWK3Us1TQ
+[2022-05-23 20:59:14.304]	local.info	middleware/jwt.go:26	
+[2022-05-23 20:59:14.304]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:00:36.282]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:00:36.319]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:00:42.503]	local.info	middleware/jwt.go:25	yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQwNDIsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5ODQyfQ.LCDYxPf5PoXzGJQK9sOqFSAUT8tRafwSZAP5dFwvDSo
+[2022-05-23 21:00:42.504]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:00:42.504]	local.info	middleware/jwt.go:27	invalid character 'È' looking for beginning of value
+[2022-05-23 21:00:48.468]	local.info	middleware/jwt.go:25	yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQwNDgsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA5ODQ4fQ.w6xEj5JTCD5DaT_3H8P1qbOLPf3SRSPUTT0ccnWK5_4
+[2022-05-23 21:00:48.469]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:00:48.469]	local.info	middleware/jwt.go:27	invalid character 'È' looking for beginning of value
+[2022-05-23 21:09:04.731]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:09:04.776]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:09:05.820]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ1NDUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwMzQ1fQ.jywWQZW6cI6f9PqmRY4_kYPJZKzUZftlBFP6XTjcCKE
+[2022-05-23 21:09:05.820]	local.info	middleware/jwt.go:26	jywWQZW6cI6f9PqmRY4_kYPJZKzUZftlBFP6XTjcCKE
+[2022-05-23 21:11:26.096]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:11:26.140]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:11:30.253]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTAsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDkwfQ.wu_zZ09AZw6xdkOcqmI1-0H2wi-OG5cD4gDygV-Mj14
+[2022-05-23 21:11:30.254]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:30.254]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:31.369]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTEsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDkxfQ.l-ukwy73RFMuneuf-AmoTB6y_0b7J6dQxQ9dJV4uS2E
+[2022-05-23 21:11:31.370]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:31.370]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:32.088]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTIsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDkyfQ.f-Th8711_3AJ_Qc96AE45mi9Kn_KETvdGjNq7PlkN8c
+[2022-05-23 21:11:32.089]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:32.089]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:32.951]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTIsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDkyfQ.f-Th8711_3AJ_Qc96AE45mi9Kn_KETvdGjNq7PlkN8c
+[2022-05-23 21:11:32.951]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:32.951]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:33.584]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDkzfQ.qzcf27612N15XM52V1bTvkkkITWo6lqsD7wVS8LHmaw
+[2022-05-23 21:11:33.585]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:33.585]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:34.102]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk0fQ.Vk35LA-j7s42SKMwx3i9kcOImQTfGKm8cIIX5SGSVdM
+[2022-05-23 21:11:34.102]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:34.102]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:34.669]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk0fQ.Vk35LA-j7s42SKMwx3i9kcOImQTfGKm8cIIX5SGSVdM
+[2022-05-23 21:11:34.669]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:34.669]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:35.371]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk1fQ.hkvexOJJTvNRga1MldBb6fBdDEHYUdaVFTcUAgW406E
+[2022-05-23 21:11:35.371]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:35.371]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:36.219]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk2fQ.zMqf53b7mXxlgJ5Dxw5U-33ZtblL2dfdmOtRGDnPB2k
+[2022-05-23 21:11:36.220]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:36.220]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:36.867]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk2fQ.zMqf53b7mXxlgJ5Dxw5U-33ZtblL2dfdmOtRGDnPB2k
+[2022-05-23 21:11:36.868]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:36.868]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:37.434]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk3fQ.4LIitS7mV40gT8rZ7K6Ble2kAVFjo4M54jMAY_cXqGI
+[2022-05-23 21:11:37.435]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:37.435]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:38.084]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTgsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk4fQ.nwSLKUizW_jJoRmgyzv_trlpbHow6IJUxF7DI90b1P0
+[2022-05-23 21:11:38.085]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:38.085]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:38.668]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ2OTgsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNDk4fQ.nwSLKUizW_jJoRmgyzv_trlpbHow6IJUxF7DI90b1P0
+[2022-05-23 21:11:38.669]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:38.669]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.118]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.119]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.119]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.283]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.284]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.284]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.451]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.451]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.451]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.618]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.618]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.618]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.783]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.784]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.784]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:43.967]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDMsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTAzfQ.IZpmqxKq_TSlspgs_-NrA_z5YbWCYSJK9qhWmYci5ok
+[2022-05-23 21:11:43.967]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:43.967]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:44.103]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTA0fQ.ma9n56p8tYIe3q5KvJeQNAL450CNtRi9kKIRTbEEIIo
+[2022-05-23 21:11:44.103]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:44.103]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:44.252]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTA0fQ.ma9n56p8tYIe3q5KvJeQNAL450CNtRi9kKIRTbEEIIo
+[2022-05-23 21:11:44.252]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:44.252]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:44.434]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTA0fQ.ma9n56p8tYIe3q5KvJeQNAL450CNtRi9kKIRTbEEIIo
+[2022-05-23 21:11:44.434]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:44.434]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:11:44.567]	local.info	middleware/jwt.go:25	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ3MDQsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNTA0fQ.ma9n56p8tYIe3q5KvJeQNAL450CNtRi9kKIRTbEEIIo
+[2022-05-23 21:11:44.567]	local.info	middleware/jwt.go:26	
+[2022-05-23 21:11:44.567]	local.info	middleware/jwt.go:27	illegal base64 data at input byte 29
+[2022-05-23 21:15:36.519]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:15:36.622]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:15:37.584]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ5MzcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNzM3fQ.0M1lbxVxaK4fEdWEbBTu9_KoVoKboJSuyJ9Pmnd3U6c
+[2022-05-23 21:15:37.585]	local.info	middleware/jwt.go:26	iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTQ5MzcsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwNzM3fQ.0M1lbxVxaK4fEdWEbBTu9_KoVoKboJSuyJ9Pmnd3U6c
+[2022-05-23 21:15:37.585]	local.info	middleware/jwt.go:27	
+[2022-05-23 21:15:37.585]	local.info	middleware/jwt.go:28	illegal base64 data at input byte 29
+[2022-05-23 21:18:06.016]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:18:06.089]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:18:06.936]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUwODYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwODg2fQ.lIDSNcTYVrK5GCuJImuEByOJO66TS1tvKu_jZ3zZ2lo
+[2022-05-23 21:18:06.936]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUwODYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwODg2fQ.lIDSNcTYVrK5GCuJImuEByOJO66TS1tvKu_jZ3zZ2lo
+[2022-05-23 21:18:06.936]	local.info	middleware/jwt.go:27	lIDSNcTYVrK5GCuJImuEByOJO66TS1tvKu_jZ3zZ2lo
+[2022-05-23 21:19:21.607]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:19:21.654]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:19:30.942]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTI5MjMsImp0aSI6I
+jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sKjjBmI7HVQ
+[2022-05-23 21:19:30.942]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTI5MjMsImp0aSI6I
+jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sKjjBmI7HVQ
+[2022-05-23 21:19:30.943]	local.info	middleware/jwt.go:27	
+[2022-05-23 21:19:30.943]	local.info	middleware/jwt.go:28	illegal base64 data at input byte 80
+[2022-05-23 21:19:39.019]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUxNzksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwOTc5fQ.3FCJcXC83y0VqcA5POGjHoYxMyHz58BBtNrOmWK2s1M
+[2022-05-23 21:19:39.020]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUxNzksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEwOTc5fQ.3FCJcXC83y0VqcA5POGjHoYxMyHz58BBtNrOmWK2s1M
+[2022-05-23 21:19:39.020]	local.info	middleware/jwt.go:27	3FCJcXC83y0VqcA5POGjHoYxMyHz58BBtNrOmWK2s1M
+[2022-05-23 21:20:01.834]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyMDEsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDAxfQ.624oDmvlpv7jR9TXH68yT0SpdYxohI8fN8IjLMdbYDQ
+[2022-05-23 21:20:01.835]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyMDEsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDAxfQ.624oDmvlpv7jR9TXH68yT0SpdYxohI8fN8IjLMdbYDQ
+[2022-05-23 21:20:01.835]	local.info	middleware/jwt.go:27	624oDmvlpv7jR9TXH68yT0SpdYxohI8fN8IjLMdbYDQ
+[2022-05-23 21:20:45.088]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyNDUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDQ1fQ.k_Nhpj6BnXOzGZz9OcjZlW9A1MZnh3eSZ3WSj2Xv-Is
+[2022-05-23 21:20:45.089]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyNDUsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDQ1fQ.k_Nhpj6BnXOzGZz9OcjZlW9A1MZnh3eSZ3WSj2Xv-Is
+[2022-05-23 21:20:45.089]	local.info	middleware/jwt.go:27	k_Nhpj6BnXOzGZz9OcjZlW9A1MZnh3eSZ3WSj2Xv-Is
+[2022-05-23 21:20:56.936]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyNTYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDU2fQ.FtesM8dW7Rrq0SZh30uRSELa3JMUgGrvKGYt-Y8d40A
+[2022-05-23 21:20:56.937]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUyNTYsImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMDU2fQ.FtesM8dW7Rrq0SZh30uRSELa3JMUgGrvKGYt-Y8d40A
+[2022-05-23 21:20:56.937]	local.info	middleware/jwt.go:27	FtesM8dW7Rrq0SZh30uRSELa3JMUgGrvKGYt-Y8d40A
+[2022-05-23 21:22:16.223]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 21:22:16.262]	local.info	DouYin_demo/main.go:24	DB init success!
+[2022-05-23 21:22:19.151]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUzMzksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMTM5fQ.yISwE9Fj9GBtHlRM-uiFdnGXFQiigizFV7gAS6Uvf74
+[2022-05-23 21:22:19.152]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTUzMzksImp0aSI6IjIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzExMTM5fQ.yISwE9Fj9GBtHlRM-uiFdnGXFQiigizFV7gAS6Uvf74
+[2022-05-23 21:22:19.152]	local.info	middleware/jwt.go:27	yISwE9Fj9GBtHlRM-uiFdnGXFQiigizFV7gAS6Uvf74
+[2022-05-23 21:37:01.719]	local.info	middleware/jwt.go:19	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTYyMjAsImp0aSI6IjIxIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEyMDIwfQ.Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
+[2022-05-23 21:37:01.720]	local.info	middleware/jwt.go:26	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTYyMjAsImp0aSI6IjIxIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEyMDIwfQ.Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
+[2022-05-23 21:37:01.720]	local.info	middleware/jwt.go:27	Eq4rR26y_KN2UatA5lSe_tv5SWFBrfwOWI-D8SG2j0A
+[2022-05-23 22:03:46.100]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 22:03:46.217]	local.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 22:03:46.218]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 22:03:46.259]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 22:04:02.054]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTc4NDIsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEzNjQyfQ.1vCC5TmSxKC2IoXJiRnd3zdtSwX-jZTxBD7wKNKEFQk
+[2022-05-23 22:04:34.318]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTc4NzQsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzEzNjc0fQ.ElNsXyo57th5n_2o8po7KTuJLFr-h5wrSRCF436w5EM
+[2022-05-23 22:12:42.562]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 22:12:42.686]	local.error	bootstrap/redis.go:18	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 22:12:42.686]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 22:12:42.717]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 22:12:50.503]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNTgzNzAsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzE0MTcwfQ.jSJtiFYcWagSnJlQpe9HMs4htZEr8cvPEbAD9z_gg88
+[2022-05-23 23:09:51.142]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:09:51.265]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:09:51.265]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:09:51.392]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:36.578]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:10:36.716]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:10:36.716]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:10:36.756]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:58.909]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-23 23:10:59.030]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-23 23:10:59.030]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-23 23:10:59.066]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-23 23:10:59.066]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:07:17.688]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:07:17.804]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:07:17.804]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:07:17.883]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:07:17.883]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:15:29.611]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:15:29.730]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:15:29.730]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:15:29.775]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:15:29.775]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:21:04.500]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNjk2NjQsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI1NDY0fQ.C66HP4jLOZ2nwmFLFnx3R8d0QQWwhP-gRsEaoV9k9ZA
+[2022-05-24 01:36:29.006]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:36:29.155]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:36:29.156]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:36:29.226]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:36:29.226]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:37:44.068]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:37:44.229]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:37:44.229]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:37:44.292]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:37:44.292]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:40:07.251]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:40:07.402]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:40:07.402]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:40:07.441]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:40:07.441]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:41:21.632]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:41:21.769]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:41:21.769]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:41:21.840]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:41:21.840]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:48:54.501]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:48:54.610]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:48:54.610]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:48:54.667]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:48:54.667]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:52:54.624]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:52:54.741]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:52:54.741]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:52:54.792]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:52:54.792]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:53:58.667]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:53:58.821]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:53:58.821]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:53:58.858]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:53:58.858]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:54:39.566]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNzE2NzksImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI3NDc5fQ.cz1TUlXfxMfUW78XpiXpF1zONJ2nKclV5T8W7EnmnA0
+[2022-05-24 01:56:17.197]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:56:17.348]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:56:17.348]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:56:17.384]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 01:56:17.384]	local.info	DouYin_demo/main.go:30	storage init success!
+[2022-05-24 01:59:54.704]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 01:59:54.816]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 01:59:54.816]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 01:59:54.842]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 02:00:17.283]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMzNzIwMTcsImp0aSI6IjE3IiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzI3ODE3fQ.1vaAAsFaiB-F5x5zaqrhlT1nh9J6V_EaIPy8qTSfgTg
+[2022-05-24 09:56:20.767]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 09:56:20.897]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 09:56:20.897]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 09:56:21.011]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 09:56:30.351]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 09:56:30.475]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 09:56:30.475]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 09:56:30.528]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:18:37.146]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:18:37.411]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:18:37.411]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:18:37.670]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:19:10.107]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:19:10.223]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:19:10.223]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:19:10.276]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:19:17.375]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:19:17.489]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:19:17.489]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:19:17.541]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:23:27.363]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:23:27.501]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:23:27.501]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:23:27.599]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:23:52.031]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:23:52.205]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:23:52.205]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:23:52.314]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:35:06.896]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:35:07.030]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:35:07.030]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:35:07.090]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:36:08.535]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:36:08.656]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:36:08.657]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:36:08.753]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:37:36.308]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:37:36.444]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:37:36.444]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:37:36.493]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:38:25.244]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:38:25.388]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:38:25.388]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:38:25.437]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:41:33.458]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:41:33.583]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:41:33.584]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:41:33.711]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:43:03.604]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:43:03.720]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:43:03.720]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:43:03.769]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:44:01.600]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:44:01.730]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:44:01.730]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:44:01.780]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:47:45.583]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:47:45.700]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:47:45.700]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:47:45.759]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:48:51.434]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:48:51.548]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:48:51.548]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:48:51.600]	local.error	bootstrap/db.go:121	migrate table failed	{"err": "Error 1138: Invalid use of NULL value"}
+[2022-05-24 22:50:51.978]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:50:52.098]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:50:52.098]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:50:52.143]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 22:53:32.043]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0NDcyMTEsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0MDMwMTF9.fXQr7lrfjQScnP__J3aJL5EIbBFzXzng7DlZpPqJJ3Q
+[2022-05-24 22:59:36.904]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 22:59:37.013]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 22:59:37.013]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 22:59:37.045]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-24 22:59:54.681]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0NDc1OTQsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0MDMzOTR9.tjSgK4KVup0SZUAWEOneGm8Buv2VWZqEvBL6O2wIL74
+[2022-05-24 23:10:32.946]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-24 23:10:33.061]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-24 23:10:33.061]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-24 23:10:33.088]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 00:41:34.655]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:41:34.776]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:41:34.776]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:41:34.815]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/models.Video's field Author: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+[2022-05-25 00:45:09.315]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:45:09.438]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:45:09.438]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:45:09.468]	local.error	bootstrap/db.go:122	migrate table failed	{"err": "Error 1075: Incorrect table definition; there can be only one auto column and it must be defined as a key"}
+[2022-05-25 00:51:24.108]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 00:51:24.240]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 00:51:24.240]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 00:51:24.308]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:19:11.617]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:19:11.727]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:19:11.727]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:19:11.781]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:20:12.855]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:20:12.979]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:20:12.979]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:20:13.030]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:20:38.973]	local.info	services/feed.go:20	no video found
+[2022-05-25 02:28:01.779]	local.info	services/feed.go:20	no video found
+[2022-05-25 02:32:05.271]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:32:05.388]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:32:05.389]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:32:05.434]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 02:38:51.452]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 02:38:51.562]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 02:38:51.562]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 02:38:51.602]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 09:53:24.395]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 09:53:24.562]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 09:53:24.562]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 09:53:24.668]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 09:54:02.576]	local.info	middleware/jwt.go:25	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM0ODY4NDIsImp0aSI6IjEiLCJpc3MiOiJhcHAiLCJuYmYiOjE2NTM0NDI2NDJ9.HqcszvhTwTPQHdFiPp7BlDLFCFePc4BO9QnqPLKEfic
+[2022-05-25 09:57:27.373]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 09:57:27.521]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 09:57:27.521]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 09:57:27.588]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:10:03.469]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:10:03.620]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:10:03.620]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:10:03.695]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:17:36.417]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:17:36.528]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:17:36.529]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:17:36.712]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:22:59.234]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:22:59.344]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:22:59.344]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:22:59.435]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 10:30:15.126]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 10:30:15.234]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 10:30:15.234]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 10:30:15.314]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 14:47:57.774]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 14:47:57.927]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 14:47:57.927]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 14:47:58.291]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 14:48:19.438]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 14:48:19.566]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 14:48:19.567]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 14:48:19.639]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:06:56.634]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:06:56.770]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:06:56.770]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:06:56.852]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:19:19.453]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:19:19.585]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:19:19.585]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:19:19.661]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 15:21:20.835]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 15:21:20.951]	local.error	bootstrap/redis.go:24	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 15:21:20.951]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 15:21:21.037]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:39:19.037]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:39:19.157]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:39:19.157]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:39:19.250]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:45:37.663]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:45:37.794]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:45:37.794]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:45:37.910]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 17:59:27.105]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 17:59:27.237]	local.error	bootstrap/redis.go:25	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 17:59:27.237]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 17:59:27.334]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 18:04:16.199]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 18:04:16.216]	local.info	bootstrap/redis.go:22	127.0.0.1:ᣫ
+[2022-05-25 18:04:16.341]	local.error	bootstrap/redis.go:26	Redis connect ping failed, err:	{"err": "dial tcp: lookup tcp/ᣫ: getaddrinfow: The specified class was not found."}
+[2022-05-25 18:04:16.341]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 18:04:16.435]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 18:07:18.779]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 18:07:18.791]	local.info	bootstrap/redis.go:22	127.0.0.1:6379
+[2022-05-25 18:07:18.792]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 18:07:18.862]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:04:08.527]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:04:08.551]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:04:08.642]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:04:51.734]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:04:51.747]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:04:51.818]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:11:24.705]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:11:24.719]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:11:24.800]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:12:31.171]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:12:31.184]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:12:31.259]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:20:10.476]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:20:10.491]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:20:10.574]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:52:47.650]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:52:47.671]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:52:47.952]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 20:56:06.719]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 20:56:06.740]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 20:56:06.882]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:20:25.067]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:20:25.089]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:20:25.218]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:24:21.471]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:24:21.487]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:24:21.571]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:34:39.212]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:34:39.228]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:34:39.366]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:38:36.758]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:38:36.783]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:38:36.875]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:40:17.213]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:40:17.227]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:40:17.325]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 21:44:32.680]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 21:44:32.715]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 21:44:32.866]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 22:10:37.948]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 22:10:37.962]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 22:10:38.052]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-25 22:13:10.197]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-25 22:13:10.210]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-25 22:13:10.282]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 00:03:17.823]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 00:03:17.843]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 00:03:17.978]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 01:31:57.246]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 01:31:57.260]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 01:31:57.379]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 01:41:14.828]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 01:41:14.851]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 01:41:14.950]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 01:50:42.320]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 01:50:42.339]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 01:50:42.472]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 02:05:00.434]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 02:05:00.461]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 02:05:00.558]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 02:35:21.871]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 02:35:21.887]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 02:35:22.024]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 12:59:55.006]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 12:59:55.078]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 12:59:55.398]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:35:39.084]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:35:39.104]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:35:39.254]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:47:03.273]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:47:03.293]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:47:03.419]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:50:28.584]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:50:28.597]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:50:28.679]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 15:53:36.622]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 15:53:36.637]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 15:53:36.763]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:00:28.852]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:33.137]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:37.200]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:46.070]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:50.828]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:00:59.077]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:01:00.594]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:04:49.360]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:04:49.382]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:04:49.476]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:05:21.979]	local.info	services/favorite.go:17	 
+[2022-05-26 16:05:21.979]	local.info	services/favorite.go:38	 
+[2022-05-26 16:07:24.372]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:07:24.397]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:07:24.482]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:07:44.524]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:07:44.525]	local.info	controllers/favorite.go:16	 
+[2022-05-26 16:07:44.525]	local.info	services/favorite.go:17	 
+[2022-05-26 16:07:44.525]	local.info	services/favorite.go:38	 
+[2022-05-26 16:08:29.874]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:08:29.874]	local.info	controllers/favorite.go:16	 
+[2022-05-26 16:08:29.874]	local.info	services/favorite.go:17	 
+[2022-05-26 16:08:29.874]	local.info	services/favorite.go:38	 
+[2022-05-26 16:17:56.270]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 16:17:56.294]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 16:17:56.398]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 16:18:25.591]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:25.591]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:25.592]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:25.592]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:48.758]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:48.759]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:48.759]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:49.511]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:49.511]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:49.511]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:49.511]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:50.144]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:50.145]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:50.145]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:52.707]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:52.707]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:52.707]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:52.708]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:53.376]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:53.377]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:53.377]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:57.028]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:57.029]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:57.029]	local.info	services/favorite.go:17	
+[2022-05-26 16:18:57.029]	local.info	services/favorite.go:38	
+[2022-05-26 16:18:57.562]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:18:57.562]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:18:57.562]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:02.479]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:19:02.480]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:19:02.480]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:02.480]	local.info	services/favorite.go:38	
+[2022-05-26 16:19:21.861]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:19:21.861]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:19:21.862]	local.info	services/favorite.go:17	
+[2022-05-26 16:19:21.862]	local.info	services/favorite.go:38	
+[2022-05-26 16:20:30.748]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:20:33.476]	local.info	services/feed.go:25	no video found
+[2022-05-26 16:26:28.480]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:28.480]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:28.480]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:28.480]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:29.128]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:29.128]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:29.128]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:31.610]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:31.612]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:31.612]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:31.612]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:32.045]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:32.045]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:32.045]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:35.889]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:35.889]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:35.889]	local.info	services/favorite.go:17	
+[2022-05-26 16:26:35.889]	local.info	services/favorite.go:38	
+[2022-05-26 16:26:36.209]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:26:36.210]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:26:36.210]	local.info	services/favorite.go:17	
+[2022-05-26 16:37:50.242]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:37:50.243]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:37:50.243]	local.info	services/favorite.go:17	
+[2022-05-26 16:37:50.243]	local.info	services/favorite.go:38	
+[2022-05-26 16:38:41.081]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:41.081]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:41.081]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:41.081]	local.info	services/favorite.go:38	
+[2022-05-26 16:38:42.524]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:42.525]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:42.525]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:46.106]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:38:46.107]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:38:46.107]	local.info	services/favorite.go:17	
+[2022-05-26 16:38:46.107]	local.info	services/favorite.go:38	
+[2022-05-26 16:39:38.577]	local.info	controllers/favorite.go:14	
+[2022-05-26 16:39:38.578]	local.info	controllers/favorite.go:16	
+[2022-05-26 16:39:38.578]	local.info	services/favorite.go:17	
+[2022-05-26 16:39:38.578]	local.info	services/favorite.go:38	
+[2022-05-26 18:33:41.529]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 18:33:41.548]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 18:33:41.690]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 18:35:18.572]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:35:18.572]	local.info	controllers/favorite.go:16	 
+[2022-05-26 18:35:18.572]	local.info	services/favorite.go:17	 
+[2022-05-26 18:35:18.572]	local.info	services/favorite.go:38	 
+[2022-05-26 18:35:57.279]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:35:57.279]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:35:57.279]	local.info	services/favorite.go:17	
+[2022-05-26 18:35:57.279]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:04.830]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:04.831]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:04.831]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:13.147]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:13.147]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:13.147]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:13.147]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:24.964]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:24.964]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:24.964]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:24.964]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:29.630]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:29.631]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:29.631]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:42.680]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:42.681]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:42.681]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:42.681]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:48.213]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:48.214]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:48.214]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:51.101]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:51.102]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:51.102]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:51.102]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:51.551]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:51.551]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:51.551]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.002]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.002]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.002]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.002]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.234]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.235]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.235]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.413]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.414]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.414]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.414]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.598]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.598]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.598]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.781]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.782]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.782]	local.info	services/favorite.go:17	
+[2022-05-26 18:36:52.782]	local.info	services/favorite.go:38	
+[2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:14	
+[2022-05-26 18:36:52.992]	local.info	controllers/favorite.go:16	
+[2022-05-26 18:36:52.992]	local.info	services/favorite.go:17	
+[2022-05-26 19:06:12.048]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 19:06:12.063]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 19:06:12.177]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 19:07:01.758]	local.info	controllers/favorite.go:15	
+[2022-05-26 19:07:01.759]	local.info	controllers/favorite.go:17	
+[2022-05-26 19:07:33.340]	local.info	controllers/favorite.go:15	
+[2022-05-26 19:07:33.341]	local.info	controllers/favorite.go:17	
+[2022-05-26 20:17:22.547]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 20:17:22.563]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 20:17:22.676]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 20:18:45.114]	local.info	services/feed.go:25	no video found
+[2022-05-26 20:25:17.316]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 20:25:17.344]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 20:25:17.455]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 20:58:16.895]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 20:58:16.914]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 20:58:17.003]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 21:10:41.763]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 21:10:41.786]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 21:10:41.893]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 00:47:47.722]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 00:47:47.745]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 00:47:47.900]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:20:29.911]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:20:29.933]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:20:30.065]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:23:02.551]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:23:02.571]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:23:02.660]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:23:23.397]	local.info	services/comment.go:73	invalid field found for struct github.com/Anzz-bot/DouYin_demo/app/common/response.Comment's field User: define a valid foreign key for relations or implement the Valuer/Scanner interface
+[2022-05-27 01:34:20.572]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:34:20.605]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:34:20.740]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:42:41.499]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-27 01:42:41.523]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-27 01:42:41.624]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-27 01:43:54.785]	local.info	services/feed.go:25	no video found
+[2022-05-27 01:44:04.113]	local.info	services/feed.go:25	no video found

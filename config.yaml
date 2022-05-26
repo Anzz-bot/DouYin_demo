@@ -1,0 +1,63 @@
+app:                     # viper tree
+  env: local                  # environment name
+  port: 8888                  # listen port
+  app_name: douyin_demo       # app name
+  app_url: http://192.168.0.107   # url name
+log:                     # viper tree
+  level: info                 # log level
+  root_dir: ./storage/logs    # root dir
+  filename: app.log           # filename
+  format:                     # write format(json)
+  show_line: true             # show which line call
+  max_backups: 3              # max old file
+  max_size: 500               # max size (MB)
+  max_age: 28                 # max keep day
+  compress: true              # true or false to compress
+database:                     # viper tree
+  driver: mysql                   # database driver
+  host: 127.0.0.1                 # host
+  port: 3306                      # port
+  database: douyin_demo           # dbname
+  username: root                  # username
+  password: 123456                # passwd
+  charset: utf8mb4                # charset
+  max_idle_conns: 10              # max free pool
+  max_open_conns: 100             # max open conn
+  log_mode: info                  # log level
+  enable_file_log_writer: true    # open log or not
+  log_filename: sql.log           # log name
+jwt:                                                                    # viper tree
+  secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s  # secret
+  jwt_ttl: 43200                                                            # ttl
+  jwt_blacklist_grace_period: 10                                            # black grace time
+  refresh_grace_period: 43200                                               # refresh time
+
+redis:                               # viper tree
+  host: 127.0.0.1                           # host
+  port: 6379                                # port
+  db: 0                                     # num 0 db
+  password:                                 # password
+
+storage:
+  default: local # 默认驱动
+  disks:
+    local:
+      root_dir: ./storage/app # 本地存储根目录
+      app_url: http://localhost:8888/storage # 本地图片 url 前部
+    ali_oss:
+      access_key_id:
+      access_key_secret:
+      bucket:
+      endpoint:
+      is_ssl: true # 是否使用 https 协议
+      is_private: false # 是否私有读
+    qi_niu:
+      access_key:
+      bucket:
+      domain:
+      secret_key:
+      is_ssl: true
+      is_private: false
+
+
+
