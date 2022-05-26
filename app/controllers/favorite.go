@@ -12,9 +12,8 @@ import (
 
 func Favorite(c *gin.Context) {
 	var form request.Favorite
-	global.App.Log.Info(c.Query("user_id"))
 	user_id := global.NowUserID
-	global.App.Log.Info(string(user_id))
+
 	token := c.Query("token")
 	video_id := utils.StrToUint64(c.Query("video_id"))
 	action_type := utils.StrToInt32(c.Query("action_type"))

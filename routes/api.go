@@ -58,7 +58,7 @@ func SetCommentApiGroupRouters(router *gin.RouterGroup) {
 
 func SetRelationApiGroupRouters(router *gin.RouterGroup) {
 
-	//router.POST("/action/", app.Register)
+	router.POST("/action/", app.Relation)
 	//router.GET("/follow/list/", app.Login)
 	//router.GET("/follower/list/", app.Login)
 }

@@ -24,7 +24,7 @@ func (favoriteService *favoriteService) Favorite(params request.Favorite) (err e
 		return
 	case 2:
 		if err = favoriteService.FavoriteOff(params.VideoId, params.UserId); err != nil {
-			return errors.New("取消点赞失败" + err.Error())
+			return errors.New("取赞失败:" + err.Error())
 		}
 		return
 	}
