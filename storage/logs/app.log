@@ -839,3 +839,9 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-26 20:25:17.316]	local.info	DouYin_demo/main.go:20	log init success!
 [2022-05-26 20:25:17.344]	local.info	DouYin_demo/main.go:23	redis init success!
 [2022-05-26 20:25:17.455]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 20:58:16.895]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 20:58:16.914]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 20:58:17.003]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-26 21:10:41.763]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-26 21:10:41.786]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-26 21:10:41.893]	local.info	DouYin_demo/main.go:26	DB init success!

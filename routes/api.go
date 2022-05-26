@@ -60,5 +60,5 @@ func SetRelationApiGroupRouters(router *gin.RouterGroup) {
 
 	router.POST("/action/", app.Relation)
 	router.GET("/follow/list/", app.RelationFollowList)
-	//router.GET("/follower/list/", app.Login)
+	router.GET("/follower/list/", app.RelationFollowerList)
 }

@@ -44,3 +44,19 @@ func RelationFollowList(c *gin.Context) {
 	}
 
 }
+
+func RelationFollowerList(c *gin.Context) {
+	var form request.RelationFollowerList
+	token := c.Query("token")
+	user_id := c.Query("user_id")
+	form = request.RelationFollowerList{
+		UserId: utils.StrToUint64(user_id),
+		Token:  token,
+	}
+	if err, relationFollowerListResponse := services.RelationService.RelationFollowerList(form); err != nil {
+		c.JSON(http.StatusBadRequest, relationFollowerListResponse)
+	} else {
+		c.JSON(http.StatusOK, relationFollowerListResponse)
+	}
+
+}
