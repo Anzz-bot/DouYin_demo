@@ -3,9 +3,11 @@ package services
 import (
 	"errors"
 	"github.com/Anzz-bot/DouYin_demo/app/common/request"
+	"github.com/Anzz-bot/DouYin_demo/app/common/response"
 	"github.com/Anzz-bot/DouYin_demo/app/models"
 	"github.com/Anzz-bot/DouYin_demo/global"
 	"gorm.io/gorm"
+	"log"
 )
 
 type relationService struct {
@@ -85,4 +87,24 @@ func (relationService *relationService) RelationOff(toUserId uint64, userId uint
 
 func (relationService *relationService) IsRelation(userId uint64, toUserId uint64) bool {
 	return global.App.DB.First(&models.Relation{}, "user_id = ? and follow_id = ?", userId, toUserId).Error == nil
+}
+
+func (relationService *relationService) RelationFollowList(param request.RelationFollowList) (err error, relationFollowListResponse response.RelationFollowListResponse) {
+	follows, err := relationService.GetFollowUserList(param.UserId, global.NowUserID)
+	relationFollowListResponse = response.RelationFollowListResponse{
+		UserList: follows,
+	}
+	if err != nil {
+		return
+	}
+	return
+}
+
+func (relationService *relationService) GetFollowUserList(userID, requestFromID uint64) ([]*response.UserAPI, error) {
+	var userList []*response.UserAPI
+	if err := global.App.DB.Raw("SELECT\n    u.id AS id,\n    u.name AS name,\n    u.follow_count AS follow_count,\n    u.follower_count AS follower_count,\n    IF(r.id IS NULL,false,true) AS is_follow\nFROM users u\nLEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=?\nWHERE u.id IN (\n    SELECT r2.follow_id\n    FROM relations r2\n    WHERE r2.user_id=?\n    );", requestFromID, userID).Scan(&userList).Error; err != nil {
+		log.Println(err)
+		return nil, err
+	}
+	return userList, nil
 }

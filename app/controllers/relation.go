@@ -7,6 +7,7 @@ import (
 	"github.com/Anzz-bot/DouYin_demo/global"
 	"github.com/Anzz-bot/DouYin_demo/utils"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func Relation(c *gin.Context) {
@@ -25,6 +26,21 @@ func Relation(c *gin.Context) {
 		response.BusinessFail(c, err.Error())
 	} else {
 		response.Success(c, response.ResponseSuccess)
+	}
+}
+
+func RelationFollowList(c *gin.Context) {
+	var form request.RelationFollowList
+	token := c.Query("token")
+	user_id := c.Query("user_id")
+	form = request.RelationFollowList{
+		UserId: utils.StrToUint64(user_id),
+		Token:  token,
+	}
+	if err, relationFollowListResponse := services.RelationService.RelationFollowList(form); err != nil {
+		c.JSON(http.StatusBadRequest, relationFollowListResponse)
+	} else {
+		c.JSON(http.StatusOK, relationFollowListResponse)
 	}
 
 }
