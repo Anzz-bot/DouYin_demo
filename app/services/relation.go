@@ -118,7 +118,7 @@ func (relationService *relationService) RelationFollowerList(param request.Relat
 
 func (relationService *relationService) GetFollowUserList(userID, requestFromID uint64) ([]*response.UserAPI, error) {
 	var userList []*response.UserAPI
-	if err := global.App.DB.Raw("SELECT\n    u.id AS id,\n    u.name AS name,\n    u.follow_count AS follow_count,\n    u.follower_count AS follower_count,\n    IF(r.id IS NULL,false,true) AS is_follow\nFROM users u\nLEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=?\nWHERE u.id IN (\n    SELECT r2.follow_id\n    FROM relations r2\n    WHERE r2.user_id=?\n    );", requestFromID, userID).Scan(&userList).Error; err != nil {
+	if err := global.App.DB.Raw("SELECT\n    u.id AS id,\n    u.name AS name,\n    u.follow_count AS follow_count,\n    u.follower_count AS follower_count,\n    IF(r.id IS NULL,false,true) AS is_follow\nFROM users u\nLEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=?\nWHERE u.id IN (\n    SELECT r2.follow_id\n    FROM relations r2\n    WHERE r2.user_id=?\n    )AND r.deleted_at IS NULL;", requestFromID, userID).Scan(&userList).Error; err != nil {
 		global.App.Log.Info(err.Error())
 		return nil, err
 	}
@@ -127,7 +127,7 @@ func (relationService *relationService) GetFollowUserList(userID, requestFromID 
 
 func (relationService *relationService) GetFollowerUserList(userID, requestFromID uint64) ([]*response.UserAPI, error) {
 	var userList []*response.UserAPI
-	if err := global.App.DB.Raw("SELECT\n    u.id AS id,\n    u.name AS name,\n    u.follow_count AS follow_count,\n    u.follower_count AS follower_count,\n    IF(r.id IS NULL,false,true) AS is_follow\nFROM users u\nLEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=?\nWHERE u.id IN (\n    SELECT r2.user_id\n    FROM relations r2\n    WHERE r2.follow_id=?\n    );", requestFromID, userID).Scan(&userList).Error; err != nil {
+	if err := global.App.DB.Raw("SELECT\n    u.id AS id,\n    u.name AS name,\n    u.follow_count AS follow_count,\n    u.follower_count AS follower_count,\n    IF(r.id IS NULL,false,true) AS is_follow\nFROM users u\nLEFT JOIN relations r ON u.id = r.follow_id AND r.user_id=?\nWHERE u.id IN (\n    SELECT r2.user_id\n    FROM relations r2\n    WHERE r2.follow_id=?\n    )AND r.deleted_at IS NULL;", requestFromID, userID).Scan(&userList).Error; err != nil {
 		global.App.Log.Info(err.Error())
 		return nil, err
 	}
