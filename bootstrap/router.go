@@ -42,12 +42,11 @@ func Cors() gin.HandlerFunc {
 }
 
 func setupRouter() *gin.Engine {
-	router := gin.Default()
 
 	if global.App.Config.App.Env == "production" {
 		gin.SetMode(gin.ReleaseMode)
 	}
-
+	router := gin.Default()
 	router.Use(gin.Logger(), middleware.CustomRecovery())
 
 	//know nothing about static path
