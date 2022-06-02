@@ -863,3 +863,41 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-05-27 01:42:41.624]	local.info	DouYin_demo/main.go:26	DB init success!
 [2022-05-27 01:43:54.785]	local.info	services/feed.go:25	no video found
 [2022-05-27 01:44:04.113]	local.info	services/feed.go:25	no video found
+[2022-05-31 03:42:25.865]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 03:42:25.898]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 03:42:26.194]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-31 03:45:35.331]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 03:45:35.346]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 03:45:35.449]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-31 03:46:20.276]	local.info	services/publish.go:61	public/local/testaaa/777121c1-362a-464b-b337-2bfb7d8aeda8.MP4
+[2022-05-31 04:12:40.429]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 04:12:40.451]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 04:12:40.568]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-31 04:13:27.980]	local.info	services/publish.go:62	public/local/covertest/9fdb5e2d-d8c2-447f-8cd7-0a0e129e40cb.MP4
+[2022-05-31 04:20:37.767]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 04:20:37.786]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 04:20:37.906]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-31 04:21:13.544]	local.info	services/publish.go:62	public/local/covertest2/4a0dcbb2-2090-4885-974e-ed3e21e223f1.MP4
+[2022-05-31 04:30:16.680]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 04:30:16.694]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 04:30:16.784]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-05-31 04:30:45.628]	local.info	services/publish.go:62	public/local/coverend/eb41a65c-8e40-4545-b2d4-d7cb6d62653b.MP4
+[2022-05-31 04:31:12.871]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:31:30.236]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:31:32.637]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:31:35.201]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:32:40.169]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:45:50.793]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:46:00.451]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:46:36.705]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:46:37.847]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:47:07.527]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:47:09.666]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:47:12.011]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:47:45.735]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:47:49.405]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:50:36.233]	local.info	services/feed.go:25	no video found
+[2022-05-31 04:50:39.214]	local.info	services/feed.go:25	no video found
+[2022-05-31 05:12:25.958]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-05-31 05:12:25.976]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-05-31 05:12:26.093]	local.info	DouYin_demo/main.go:26	DB init success!

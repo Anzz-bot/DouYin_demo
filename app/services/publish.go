@@ -12,6 +12,7 @@ import (
 	"github.com/Anzz-bot/DouYin_demo/app/common/response"
 	"github.com/Anzz-bot/DouYin_demo/app/models"
 	"github.com/Anzz-bot/DouYin_demo/global"
+	"github.com/Anzz-bot/DouYin_demo/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/jassue/go-storage/storage"
 	uuid "github.com/satori/go.uuid"
@@ -58,12 +59,14 @@ func (publishService *publishService) Publish(c *gin.Context, params request.Vid
 	if err != nil {
 		return
 	}
-
+	global.App.Log.Info(localPrefix + key)
+	utils.GetSnapshot("./storage/app/"+localPrefix+key, "./storage/app/"+localPrefix+"local/"+params.Title+"/cover", 1)
 	video := models.Video{
 		AuthorID: global.NowUserID,
 		DiskType: string(global.App.Config.Storage.Default),
 		SrcType:  1,
 		PlayUrl:  global.App.Config.App.AppUrl + ":" + global.App.Config.App.Port + "/storage/" + key, //"http://192.168.0.107:8888/storage/"
+		CoverUrl: global.App.Config.App.AppUrl + ":" + global.App.Config.App.Port + "/storage/local/" + params.Title + "/cover.jpeg",
 	}
 	err = global.App.DB.Create(&video).Error
 	if err != nil {

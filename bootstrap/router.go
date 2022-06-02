@@ -9,6 +9,7 @@ package bootstrap
 import (
 	"context"
 	app "github.com/Anzz-bot/DouYin_demo/app/controllers"
+	"github.com/Anzz-bot/DouYin_demo/app/middleware"
 	"github.com/Anzz-bot/DouYin_demo/global"
 	"github.com/Anzz-bot/DouYin_demo/routes"
 	"github.com/gin-gonic/gin"
@@ -42,6 +43,12 @@ func Cors() gin.HandlerFunc {
 
 func setupRouter() *gin.Engine {
 	router := gin.Default()
+
+	if global.App.Config.App.Env == "production" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+
+	router.Use(gin.Logger(), middleware.CustomRecovery())
 
 	//know nothing about static path
 	//Android static file analysis
