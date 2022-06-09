@@ -80,15 +80,15 @@ DouYin_demo
 
 ### 使用到的框架
 
-- [Gin](https://getbootstrap.com)
-- [Gorm](https://jquery.com)
-- [Zap](https://laravel.com)
-- [Lumberjack](https://laravel.com)
-- [MySQL](https://laravel.com)
-- [Validator](https://laravel.com)
-- [Viper](https://laravel.com)
-- [jwt](https://laravel.com)
-- [Redis](https://laravel.com)
+- [Gin](https://gin-gonic.com/)
+- [Gorm](https://gorm.io/)
+- [Zap](https://github.com/uber-go/zap)
+- [Lumberjack](https://github.com/natefinch/lumberjack)
+- [MySQL](https://www.mysql.com/)
+- [Validator](https://github.com/validator)
+- [Viper](https://github.com/spf13/viper)
+- [jwt](https://github.com/dgrijalva/jwt-go)
+- [Redis](https://redis.io/)
 
 ### 贡献者
 
@@ -115,7 +115,8 @@ DouYin_demo
 
 alexander.huang
 
-掘金:https://juejin.cn/user/550196363672088  &ensp; 
+掘金:https://juejin.cn/user/550196363672088  
+Email:[alexander.huangai77@gmail.com](alexander.huangai77@gmail.com)
 
 *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
