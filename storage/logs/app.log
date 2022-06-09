@@ -913,3 +913,75 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-06-01 18:40:15.122]	production.info	DouYin_demo/main.go:20	log init success!
 [2022-06-01 18:40:15.134]	production.info	DouYin_demo/main.go:23	redis init success!
 [2022-06-01 18:40:15.213]	production.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-02 04:28:48.265]	production.info	DouYin_demo/main.go:20	log init success!
+[2022-06-02 04:28:48.296]	production.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-02 04:28:48.573]	production.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-09 23:37:53.073]	production.info	DouYin_demo/main.go:20	log init success!
+[2022-06-09 23:37:53.114]	production.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-09 23:37:53.434]	production.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-09 23:43:15.221]	production.info	services/publish.go:62	public/production/sda/4c09f250-65eb-4351-a8ef-e0b1250928c6.MP4
+[2022-06-09 23:49:57.455]	production.info	DouYin_demo/main.go:20	log init success!
+[2022-06-09 23:49:57.485]	production.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-09 23:49:57.610]	production.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-09 23:49:59.118]	production.info	services/publish.go:62	public/production/hhhhhhhhhh
+/7a3f6d30-c823-4bd1-b0fd-73e2b29fe6e9.MP4
+[2022-06-09 23:51:58.971]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-09 23:51:58.994]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-09 23:51:59.136]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-09 23:52:01.818]	local.info	services/publish.go:62	public/local/hhhhhhhhhh
+/fd64c0d1-d98f-4d2b-99c7-d93fa69de89c.MP4
+[2022-06-09 23:52:34.247]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-09 23:52:34.268]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-09 23:52:34.376]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-09 23:52:36.918]	local.info	services/publish.go:62	public/local/hhhhhhhhhvvv/ff4be802-43d7-413c-a260-618b3d1d1b8d.MP4
+[2022-06-09 23:52:38.515]	local.info	services/feed.go:25	no video found
+[2022-06-09 23:52:44.864]	local.info	services/feed.go:25	no video found
+[2022-06-09 23:52:53.658]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:46:38.528]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-10 01:46:38.581]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-10 01:46:38.735]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-10 01:49:25.639]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:49:32.359]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:49:34.720]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:49:37.797]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:52:03.361]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-10 01:52:03.390]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-10 01:52:03.529]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-10 01:52:49.568]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:55:56.609]	local.info	services/publish.go:62	public/local/qqqqqqqqqqq/d195fced-8ae3-4ab7-92a5-5a77633be767.MP4
+[2022-06-10 01:56:07.734]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:56:12.384]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:56:13.785]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:56:15.068]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:56:21.904]	local.info	services/feed.go:25	no video found
+[2022-06-10 01:56:24.195]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:00:09.070]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:00:30.871]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:00:34.005]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:00:36.599]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:03:52.100]	local.info	services/feed.go:25	no video found
+[2022-06-10 02:35:39.169]	local.info	services/publish.go:62	public/local/11111
+/a4d91699-9a5d-42a1-afde-e33cec8f5b84.MP4
+[2022-06-10 02:36:34.707]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-10 02:36:34.750]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-10 02:36:34.912]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-10 02:36:39.181]	local.info	services/publish.go:62	public/local/hxl1
+/1349014e-c95e-463d-963f-00674fff0d53.MP4
+[2022-06-10 02:37:21.829]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-10 02:37:21.863]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-10 02:37:21.986]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-10 02:37:38.677]	local.info	services/publish.go:62	public/local/hxl1/a8f5fb16-86fe-4583-aef2-1f9198f83c53.MP4
+[2022-06-10 02:37:53.997]	local.info	services/publish.go:62	public/local/hxl2/69caa741-392b-4b84-86c6-fe6938c74082.MP4
+[2022-06-10 02:38:07.481]	local.info	services/publish.go:62	public/local/hxl3
+/12340006-3543-4dd1-99f9-8838da572cda.MP4
+[2022-06-10 02:38:36.929]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-10 02:38:36.950]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-10 02:38:37.071]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-10 02:38:47.003]	local.info	services/publish.go:62	public/local/hxl3/2d32f321-be1c-4867-97ac-c744c07ad8df.MP4
+[2022-06-10 02:38:59.398]	local.info	services/publish.go:62	public/local/hxl4/90a6ee88-bc47-4658-ba0f-b649db71e531.MP4
+[2022-06-10 02:39:09.842]	local.info	services/publish.go:62	public/local/hxl5/5f60c415-80e7-4f8d-88a8-57f46b415a02.MP4
+[2022-06-10 02:39:20.764]	local.info	services/publish.go:62	public/local/hxl6/9ae8d34a-3968-4e8a-b547-28fb6d746184.MP4
+[2022-06-10 02:40:11.715]	local.info	services/publish.go:62	public/local/hxl7/0aba183d-855c-4cc1-b87d-08fb1d850cae.MP4
+[2022-06-10 02:40:21.702]	local.info	services/publish.go:62	public/local/hxl8/daa734de-647a-4fe5-967a-6273de7555cc.MP4
+[2022-06-10 02:40:35.393]	local.info	services/publish.go:62	public/local/hxl9/3cf827ca-af4d-42f4-b725-7b2b08bfb265.MP4
+[2022-06-10 02:40:53.147]	local.info	services/publish.go:62	public/local/hxl10/62e4c5a4-cbfe-4ce1-b20e-a3cef1103748.MP4

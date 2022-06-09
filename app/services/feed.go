@@ -30,8 +30,6 @@ func (feedService *feedService) Feed(params request.Feed) (err error, response r
 	return
 }
 
-//todo： ffmpeg 实现抽帧
-
 func (feedService *feedService) GetFeedList(unixTime time.Time) (time.Time, []*response.VideoAuthorApi, error) {
 	var videoAuthorApi []*response.VideoAuthorApi
 	err := global.App.DB.Raw("SELECT\n    v.ID AS id,\n    u.id AS author_id,\n    u.name AS author_name,\n    u.follow_count AS author_follow_count,\n    u.follower_count AS author_follower_count,\n    false AS author_is_follow,\n    v.play_url AS play_url,\n    v.cover_url AS cover_url,\n    v.favorite_count AS favorite_count,\n    v.comment_count AS comment_count,\n    false AS is_favorite\nFROM videos v\nLEFT JOIN users u ON v.author_id=u.id\nWHERE v.created_at < ?\nLIMIT 30;", unixTime).Scan(&videoAuthorApi).Error
