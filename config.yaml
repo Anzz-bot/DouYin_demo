@@ -1,8 +1,8 @@
 app:                     # viper tree
-  env: local                  # environment name
+  env: local                 # environment name
   port: 8888                  # listen port
   app_name: douyin_demo       # app name
-  app_url: http://192.168.0.107   # url name
+  app_url: http://192.168.2.167   # url name
 log:                     # viper tree
   level: info                 # log level
   root_dir: ./storage/logs    # root dir
