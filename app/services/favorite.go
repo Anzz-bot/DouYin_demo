@@ -38,7 +38,7 @@ func (favoriteService *favoriteService) Favorite(params request.Favorite) (err e
 }
 
 func (favoriteService *favoriteService) FavoriteOn(videoId uint64, userId uint64) (err error) {
-
+	// 重复点赞
 	if favoriteService.IsFavorite(userId, videoId) {
 		return errors.New("已经点赞过了，亲")
 	}
