@@ -985,3 +985,7 @@ jIwIiwiaXNzIjoiYXBwIiwibmJmIjoxNjUzMzA4NzIzfQ.vc0vYomrVSkvIMBF_CbaxHfuk5QGqad6sK
 [2022-06-10 02:40:21.702]	local.info	services/publish.go:62	public/local/hxl8/daa734de-647a-4fe5-967a-6273de7555cc.MP4
 [2022-06-10 02:40:35.393]	local.info	services/publish.go:62	public/local/hxl9/3cf827ca-af4d-42f4-b725-7b2b08bfb265.MP4
 [2022-06-10 02:40:53.147]	local.info	services/publish.go:62	public/local/hxl10/62e4c5a4-cbfe-4ce1-b20e-a3cef1103748.MP4
+[2022-06-12 15:23:05.861]	local.info	DouYin_demo/main.go:20	log init success!
+[2022-06-12 15:23:05.914]	local.info	DouYin_demo/main.go:23	redis init success!
+[2022-06-12 15:23:06.172]	local.info	DouYin_demo/main.go:26	DB init success!
+[2022-06-12 15:27:12.070]	local.info	services/publish.go:62	public/local/test/3f0a95f6-bb54-48a0-9bea-7476752ac23b.MP4
