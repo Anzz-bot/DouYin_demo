@@ -1,3 +1,9 @@
+/*
+ * @Author: alexander.huang
+ * @Date:   2022-06-23 20:14:50
+ * @Last Modified by: alexander.huang
+ * @Last Modified time: 2022-06-23 20:14:50
+ */
 package utils
 
 import (
@@ -10,9 +16,9 @@ import (
 )
 
 const (
-	endpoint   = "https://cos.ap-nanjing.myqcloud.com"
-	accesskey  = "AKIDQfeMnxqSoxDCuLVNyIL9gwvd4E6i37uR"
-	secretkey  = "HH0SdW8TX4PWO1OVMxINCm8E4ez4ta1D"
+	endpoint   = ""
+	accesskey  = ""
+	secretkey  = ""
 	bucketName = "douyin-demo"
 	region     = "ap-nanjing"
 )
