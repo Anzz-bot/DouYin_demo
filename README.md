@@ -115,7 +115,7 @@ DouYin_demo
 
 alexander.huang
 
-掘金:https://juejin.cn/user/550196363672088  
+
 Email:[alexander.huangai77@gmail.com](alexander.huangai77@gmail.com)
 
 *您也可以在贡献者名单中参看所有参与该项目的开发者。*
