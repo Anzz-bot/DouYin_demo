@@ -17,6 +17,7 @@ import (
 	"time"
 )
 
+
 func Feed(c *gin.Context) {
 	var form request.Feed
 	latestTime := utils.StrToInt64(c.Query("latest_time"))
